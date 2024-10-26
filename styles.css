@@ -93,6 +93,11 @@ select:hover {
     border-radius: var(--border-radius);
 }
 
+#preferences-box label {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
 button img {
     filter: invert(100%);
 }

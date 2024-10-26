@@ -218,7 +218,8 @@ ipcMain.handle('get-plugins', async (event) => {
     const path = app.getPath('userData');
     const buf = fs.readdirSync(`${path}/plugins`, { encoding: 'utf8', flag: 'r' });
     return buf;
-  
+})
+
 function download(url, dest, cb) {
     var file = fs.createWriteStream(dest);
     https.get(url, function (response) {

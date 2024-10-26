@@ -370,11 +370,13 @@ ul {
 
 #pref-tabs {
     display: flex;
+    margin: 16pt;
 }
 
 .pref-tab {
     display: flex;
     align-items: center;
+    margin: 4pt;
 }
 
 #preferences-box button,
@@ -387,13 +389,21 @@ select:hover {
     background-color: var(--button-tertiary);
 }
 
+#preferences-box label, p {
+    margin-left: 16pt;
+}
+
 #preferences-box * {
-    margin: 4pt;
+    /* margin: 4pt; */
 }
 
 .toggle-area {
     display: flex;
     align-items: center;
+}
+
+.toggle-area input {
+    margin-left: 16pt;
 }
 
 #experiments b {

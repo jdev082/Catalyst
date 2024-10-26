@@ -48,10 +48,17 @@ body {
     white-space: nowrap;
     padding: 4pt;
     padding-left: 8pt;
+    display: flex;
+    align-items: center;
 }
 
 .tab span {
     font-size: 12pt;
+}
+
+.tab * {
+    padding-left: 1pt;
+    padding-right: 1pt;
 }
 
 .tab .indicator {

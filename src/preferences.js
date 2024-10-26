@@ -30,6 +30,7 @@ function togglePreferences() {
             document.getElementById('pref-useragent').value = preferences.agent;
         }
         addTextListener(document.getElementById('pref-useragent'), 'agent');
+        addTextListener(document.getElementById('pref-font'), 'font')
         addCheckboxListener(document.getElementById('pref-homewidgets'), 'homewidgets');
         document.getElementById('pref-homewidgets').checked = preferences.homewidgets;
         addSelectListener(document.getElementById('pref-theme'), 'theme');
@@ -118,6 +119,7 @@ function evaluatePreferences() {
         }
         catalyst.native.loadTheme(preferences.theme);
     }
+    document.body.style.fontFamily = preferences.font;
 }
 
 var enginespref = document.querySelector('#se');

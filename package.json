@@ -1,6 +1,6 @@
 {
     "name": "catalyst",
-    "version": "3.8.0-beta.1",
+    "version": "3.8.3",
     "description": "A minimal Electron Web Browser",
     "main": "main/main.js",
     "private": true,
@@ -14,7 +14,6 @@
     },
     "repository": "https://github.com/CatalystDevOrg/Catalyst",
     "keywords": [
-        "Electron",
         "Browser",
         "Internet"
     ],
@@ -22,19 +21,18 @@
     "email": "email@localhost",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^30.0.2",
+        "electron": "^30.5.1",
         "electron-builder": "^24.13.3",
         "electron-builder-squirrel-windows": "^24.13.3",
         "electron-reloader": "^1.2.3",
-        "eslint": "^9.2.0"
+        "eslint": "^8.57.0"
     },
     "dependencies": {
-        "@cliqz/adblocker-electron": "^1.27.2",
+        "@cliqz/adblocker-electron": "^1.27.3",
         "cross-fetch": "^4.0.0",
-        "custom-electron-titlebar": "^4.2.8",
         "electron-context-menu": "^3.6.1",
-        "electron-squirrel-startup": "^1.0.0",
-        "material-symbols": "^0.17.4"
+        "electron-squirrel-startup": "^1.0.1",
+        "material-symbols": "^0.18.0"
     },
     "build": {
         "appId": "org.eu.getcatalyst.catalyst",

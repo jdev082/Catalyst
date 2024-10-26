@@ -5,10 +5,10 @@ backward = document.querySelector('#back');
 forward = document.querySelector('#forward');
 bkmrk = document.querySelector('#bkmtggl');
 find = document.querySelector('#find');
+sidebar = document.querySelector('#tgl-sidebar')
 
 bkmrk.addEventListener('click', () => {
     toggleBookmarks();
-    console.log('t');
 });
 
 document.getElementById('more-btn').addEventListener('click', () => {
@@ -50,4 +50,8 @@ find.addEventListener('input', (event) => {
     } else {
         document.querySelector('.current').stopFindInPage('clearSelection');
     }
+});
+
+sidebar.addEventListener('click', () => {
+    toggleDisplay(document.getElementById('sidebar'));
 });

@@ -25,18 +25,18 @@ contextBridge.exposeInMainWorld('native', {
     getThemes: () => {
         const themes = ipcRenderer.invoke('get-themes').then(
             result => {
-                themeSelect = document.getElementById('pref-theme')
+                themeSelect = document.getElementById('pref-theme');
                 for (x in result) {
-                    if (!result[x].endsWith(".css")) {
+                    if (!result[x].endsWith('.css')) {
                     } else {
-                        let sel = document.createElement('option')
-                        sel.value = result[x]
-                        sel.innerText = result[x].replace(".css", "")
-                        themeSelect.appendChild(sel)
+                        let sel = document.createElement('option');
+                        sel.value = result[x];
+                        sel.innerText = result[x].replace('.css', '');
+                        themeSelect.appendChild(sel);
                     }
                 }
             }
-        )
+        );
     },
     getPlugins: () => {
         const themes = ipcRenderer.invoke('get-plugins').then(
@@ -90,13 +90,16 @@ contextBridge.exposeInMainWorld('native', {
                 let el = document.createElement('style');
                 el.type = 'text/css';
                 el.innerText = result;
-                el.classList.add("theme")
+                el.classList.add('theme');
                 document.head.appendChild(el);
             }
-        )
+        );
+    },
+    downloadTheme: (url, name) => {
+        ipcRenderer.invoke('download-theme', url, name);
     },
     unloadTheme: () => {
-        document.getElementsByClassName('theme')[0].remove()
+        document.getElementsByClassName('theme')[0].remove();
     },
     enableAdBlocker: () => ipcRenderer.invoke('enable-ad-blocker'),
     ipcToggleFs: () => ipcRenderer.invoke('toggle-full-screen'),

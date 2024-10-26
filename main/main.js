@@ -1,10 +1,10 @@
 /* eslint-enable no-undef */
 /* eslint-enable no-unused-vars */
 const { ElectronBlocker } = require('@cliqz/adblocker-electron');
-const { app, BrowserWindow, dialog, Menu, session, ipcMain, electron } = require('electron');
+const { app, BrowserWindow, Menu, session, ipcMain } = require('electron');
 const path = require('path');
 const fs = require('fs');
-const fetch = require('cross-fetch');
+const https = require('https');
 const contextMenu = require('electron-context-menu');
 
 if (require('electron-squirrel-startup')) app.quit();
@@ -37,7 +37,7 @@ app.whenReady().then(() => {
     });
 
     session.defaultSession.setPermissionRequestHandler((webContents, permission, callback) => {
-        callback(mainWindow.webContents.executeJavaScript(`confirm('This page has requested the following permission: ${permission}')`))
+        callback(mainWindow.webContents.executeJavaScript(`confirm('This page has requested the following permission: ${permission}')`));
     });
 });
 
@@ -50,14 +50,24 @@ app.on('web-contents-created', function (event, contents) {
             newWindowEvent.preventDefault();
         });
     }
+    contents.setWindowOpenHandler(({ url }) => {
+        if (mainWindow.webContents
+        .executeJavaScript('JSON.parse(localStorage.getItem("preferences")).osb')
+        .then(localStorage => {
+            if (localStorage) {
+                mainWindow.webContents.executeJavaScript(`openInSidebar('${url}')`)
+
+            } else {
+                mainWindow.webContents.executeJavaScript(`createTab('${url}')`)
+            }
+        }))
+        return { action: 'deny' }
+    });
 });
 
 try {
     require('electron-reloader')(module);
 } catch { }
-
-let ver = app.getVersion();
-let appName = app.getName();
 
 function createAboutWindow() {
     aboutWindow = new BrowserWindow({
@@ -135,15 +145,7 @@ const template = [{
         mainWindow.webContents.toggleDevTools();
     },
 
-}/*
-    {
-        label: "Check for Updates",
-        accelerator: "CmdOrCtrl+U",
-        click: function() {
-            checkForUpdate(mainWindow);
-        }
-    }*/
-];
+}];
 
 app.on('web-contents-created', (e, contents) => {
     contextMenu({
@@ -158,7 +160,24 @@ app.on('web-contents-created', (e, contents) => {
         showCopyVideoAddress: true,
         showSaveVideoAs: true,
         showCopyLink: true,
+        prepend: (defaultActions, parameters, browserWindow) => [
+            {
+                label: 'Search for "{selection}"',
+                visible: parameters.selectionText.trim().length > 0,
+                click: () => {
+                    mainWindow.webContents.executeJavaScript(`loadURL("${parameters.selectionText.trim()}")`)
+                }
+            },
+            {
+                label: 'Open link in new tab',
+                visible: parameters.linkURL,
+                click: () => {
+                    mainWindow.webContents.executeJavaScript(`createTab('${parameters.linkURL}')`)
+                }
+            }
+        ]
     });
+    
 });
 
 ipcMain.handle('enable-ad-blocker', (event) => {
@@ -182,7 +201,7 @@ ipcMain.handle('read-user-data', async (event, fileName) => {
 });
 
 if (!fs.existsSync(`${app.getPath('userData')}/themes`)) {
-    fs.mkdirSync(`${app.getPath('userData')}/themes`)
+    fs.mkdirSync(`${app.getPath('userData')}/themes`);
 }
 
 if (!fs.existsSync(`${app.getPath("userData")}/plugins`)) {
@@ -199,6 +218,21 @@ ipcMain.handle('get-plugins', async (event) => {
     const path = app.getPath('userData');
     const buf = fs.readdirSync(`${path}/plugins`, { encoding: 'utf8', flag: 'r' });
     return buf;
+  
+function download(url, dest, cb) {
+    var file = fs.createWriteStream(dest);
+    https.get(url, function (response) {
+        response.pipe(file);
+        file.on('finish', function () {
+            file.close(cb);
+        });
+    });
+}
+
+ipcMain.handle('download-theme', async (event, url, name) => {
+    download(url, `${app.getPath('userData')}/themes/${name}`, () => {
+        return;
+    });
 });
 
 ipcMain.handle('toggle-full-screen', async (event) => {

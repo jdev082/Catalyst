@@ -41,6 +41,7 @@
             <button id="reload"><img src="../assets/icons/arrow-clockwise.svg" alt="Reload"></button>
             <button id="more-btn"><img src="../assets/icons/three-dots-vertical.svg" alt="More menu"></button>
             <button id="bkmtggl"><img width="20" height="20" src="../assets/icons/bookmark.svg"></button>
+            <button id="tgl-sidebar"><span class="material-symbols-rounded">view_sidebar</span></button>
         </div>
         <!-- More menu -->
         <div class="hidden" id="more-menu">
@@ -61,7 +62,7 @@
         </div>
     </div>
     <!-- Bookmarks -->
-    <div id="bookmarks">
+    <div id="bookmarks" class="hidden">
         <!-- bookmarks inserted with JS -->
     </div>
     <!-- Preferences -->
@@ -110,14 +111,25 @@
         </div>
         <div class="hidden" id="advanced">
             <label for="pref-strt">Startup Page</label>
-            <input class="text-black p-1.5 rounded-sm" id="pref-strt" />
+            <input type="text" class="text-black p-1.5 rounded-sm" id="pref-strt" />
             <p class="text-sm">Sets a custom startup page.</p>
             <br />
             <div class="toggle-area">
                 <label for="pref-usrchr">Custom CSS</label>
                 <input id="pref-usrchr" type="checkbox" class="" />
             </div>
+            <br />
             <p class="text-sm">Loads custom css from the userChrome.css file</p>
+            <br />
+            <label for="pref-font">Custom Font</label>
+            <input type="text" id="pref-font">
+            <p>Sets a custom font</p>
+            <br />
+            <div class="toggle-area">
+                <label for="pref-osb">Auto open in sidebar</label>
+                <input id="pref-osb" type="checkbox">
+            </div>
+            <p>When a page attempts to open a new window, open the URL in the sidebar instead.</p>
             <br />
             <div class="toggle-area">
                 <label for="pref-adblk">Enable AD Blocker</label>
@@ -172,6 +184,8 @@
         <button onClick="togglePreferences()">Customize Your
             Browser!</button>
     </div>
+    <!-- Sidebar -->
+    <webview class="hidden" id="sidebar" src="https://www.google.com"></webview>
     <!-- Webviews generated with JS -->
     <div id="webviews"></div>
     <!-- Find Window -->

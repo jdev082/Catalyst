@@ -83,6 +83,16 @@ select:hover {
     background-color: var(--button-secondary);
 }
 
+#preferences-box input[type=text] {
+    padding: 4pt;
+    border-radius: var(--border-radius);
+}
+
+#preferences-box input[type=text] {
+    padding: 4pt;
+    border-radius: var(--border-radius);
+}
+
 button img {
     filter: invert(100%);
 }
@@ -94,7 +104,7 @@ button img {
 
 .view {
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
 }
 
 .suggestion {
@@ -140,31 +150,22 @@ button img {
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 32rem;
-    padding: 1.5rem;
-    margin: 0.125rem;
+    max-width: 16rem;
+    padding: 8pt;
+    margin: 8pt;
     min-width: 95px;
     height: 95px;
     overflow: hidden;
-    background-color: #C7D2FE;
+    background-color: var(--button-secondary);
     font-size: 2xl;
-    color: var(--tertiary);
-    ;
+    color: var(--foreground);
     border-radius: 9999px;
     cursor: pointer;
 }
 
 .bookmark:hover {
-    background-color: var(--secondary);
+    background-color: var(--button-tertiary);
     ;
-}
-
-.bookmark {
-    background-color: #1E293B;
-}
-
-.bookmark.dark:hover {
-    background-color: #3730A3;
 }
 
 .bookmark img {
@@ -172,7 +173,7 @@ button img {
     padding: 0.5rem;
     width: 32pt;
     height: 32pt;
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     ;
     border-radius: var(--border-radius);
 }
@@ -302,6 +303,7 @@ ul {
     float: right;
     position: absolute;
     right: 0;
+    z-index: 1;
     padding: 0.5rem;
     margin: 0.25rem;
     border-radius: var(--moremenu-radius);
@@ -421,6 +423,15 @@ input[type="checkbox"]:checked::after {
 
 .hidden {
     display: none !important;
+}
+
+#sidebar {
+    min-width: 30%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    height: calc(100vh - 70px);
+    z-index: 0;
 }
 
 webview {

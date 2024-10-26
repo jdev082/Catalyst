@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../output/tailwind.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="m-4 bg-indigo-600 text-white">
-    <div class="flex space-x-8">
+<body>
+    <style>
+        div {
+            margin-top: 4pt;
+            margin-bottom: 4pt;
+        }
+        #left {
+            margin-left: 8pt;
+        }
+        #right {
+            margin-right: 8pt;
+        }
+    </style>
+    <div id="left" style="float: left;">
         <img width="128" height="128" src="../assets/icon.png">
-        <h1 class="text-7xl">Catalyst</h1>
+        <h1>Catalyst</h1>
     </div>
-    <div class="text-center text-2xl">
+    <div id="right" style="float: right;">
         <label for="release">Release</label>
         <span id="release"></span>
         <br />

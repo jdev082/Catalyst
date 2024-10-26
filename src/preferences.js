@@ -30,9 +30,11 @@ function togglePreferences() {
             document.getElementById('pref-useragent').value = preferences.agent;
         }
         addTextListener(document.getElementById('pref-useragent'), 'agent');
+        addTextListener(document.getElementById('pref-font'), 'font')
         addCheckboxListener(document.getElementById('pref-homewidgets'), 'homewidgets');
         document.getElementById('pref-homewidgets').checked = preferences.homewidgets;
-        addSelectListener(document.getElementById('pref-theme'), 'theme')
+        addSelectListener(document.getElementById('pref-theme'), 'theme');
+        addCheckboxListener(document.getElementById('pref-osb'), 'osb');
     }
 }
 
@@ -49,7 +51,7 @@ function getPreferences() {
     if (!window.localStorage.getItem('preferences')) {
         window.localStorage.setItem(
             'preferences',
-            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false })
+            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, osb: false })
         );
     }
     return JSON.parse(window.localStorage.getItem('preferences'));
@@ -82,7 +84,7 @@ function addSelectListener(element, prefKey) {
     element.addEventListener('change', () => {
         preferences[prefKey] = element.value;
         updatePreferences();
-    })
+    });
 }
 
 /**
@@ -115,8 +117,9 @@ function evaluatePreferences() {
         if (preferences.theme == 0) {
             return;
         }
-        native.loadTheme(preferences.theme)
+        catalyst.native.loadTheme(preferences.theme);
     }
+    document.body.style.fontFamily = preferences.font;
 }
 
 var enginespref = document.querySelector('#se');

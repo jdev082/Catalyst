@@ -1,0 +1,23 @@
+From 57fac8b4d5f758f283f45782b2c05c2ec18b3c96 Mon Sep 17 00:00:00 2001
+From: jdev082 <jdev082@jdev.eu.org>
+Date: Tue, 28 May 2024 16:25:32 -0500
+Subject: [PATCH] fix: fix web page vertical cutoff
+
+Signed-off-by: jdev082 <jdev082@jdev.eu.org>
+---
+ styles.css | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/styles.css b/styles.css
+index e7f0d4d5..df81e954 100644
+--- a/styles.css
++++ b/styles.css
+@@ -99,7 +99,7 @@ button img {
+ 
+ .view {
+     min-width: 100vw;
+-    min-height: 100vh;
++    min-height: calc(100vh - 70px);
+ }
+ 
+ .suggestion {

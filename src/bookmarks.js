@@ -20,6 +20,7 @@ function addBookmarkToBar(url, title) {
     bookmarkEl.innerHTML = `<img src='${img}'<h1>${title}</h1>`;
     bookmarkEl.onclick = () => {
         createTab(url);
+        toggleBookmarks();
     };
     bookmarkEl.classList.add('bookmark');
     bookmarksBar.appendChild(bookmarkEl);

@@ -1,0 +1,27 @@
+From 36ce8781ec8f90d1b2150cef480d62ee423387b9 Mon Sep 17 00:00:00 2001
+From: jdev082 <jdev082@jdev.eu.org>
+Date: Mon, 27 May 2024 22:50:04 +0000
+Subject: [PATCH] fix(preferences): add padding and border radius to input
+ boxes
+
+Signed-off-by: jdev082 <jdev082@jdev.eu.org>
+---
+ styles.css | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/styles.css b/styles.css
+index b8833a12..e7f0d4d5 100644
+--- a/styles.css
++++ b/styles.css
+@@ -83,6 +83,11 @@ select:hover {
+     background-color: var(--button-secondary);
+ }
+ 
++#preferences-box input[type=text] {
++    padding: 4pt;
++    border-radius: var(--border-radius);
++}
++
+ button img {
+     filter: invert(100%);
+ }

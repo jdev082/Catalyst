@@ -1,0 +1,11 @@
+--- styles.css
++++ styles.css
+@@ -99,7 +99,7 @@ button img {
+ 
+ .view {
+     min-width: 100vw;
+-    min-height: 100vh;
++    min-height: calc(100vh - 70px);
+ }
+ 
+ .suggestion {

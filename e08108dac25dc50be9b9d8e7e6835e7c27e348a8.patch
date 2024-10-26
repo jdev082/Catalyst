@@ -1,0 +1,23 @@
+From e08108dac25dc50be9b9d8e7e6835e7c27e348a8 Mon Sep 17 00:00:00 2001
+From: jdev082 <jdev082@jdev.eu.org>
+Date: Sat, 26 Oct 2024 13:12:33 -0500
+Subject: [PATCH] feat(bookmarks): close bookmarks screen when a bookmark is
+ clicked
+
+Signed-off-by: jdev082 <jdev082@jdev.eu.org>
+---
+ src/bookmarks.js | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/bookmarks.js b/src/bookmarks.js
+index e37463c2..30411f2f 100644
+--- a/src/bookmarks.js
++++ b/src/bookmarks.js
+@@ -20,6 +20,7 @@ function addBookmarkToBar(url, title) {
+     bookmarkEl.innerHTML = `<img src='${img}'<h1>${title}</h1>`;
+     bookmarkEl.onclick = () => {
+         createTab(url);
++        toggleBookmarks();
+     };
+     bookmarkEl.classList.add('bookmark');
+     bookmarksBar.appendChild(bookmarkEl);

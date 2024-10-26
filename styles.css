@@ -10,9 +10,9 @@
     --tertiary: #4f46e5;
     --userchrome-btn-primary: var(--primary);
     --userchrome-btn-secondary: var(--secondary);
-    --button-primary: #38bdf8;
-    --button-secondary: #0ea5e9;
-    --button-tertiary: #0891b2;
+    --button-primary: #374151;
+    --button-secondary: #1e293b;
+    --button-tertiary: #111827;
     --foreground: white;
     --border-radius: 0.5rem;
     --tab-radius: var(--border-radius);

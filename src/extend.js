@@ -5,4 +5,4 @@ var catalyst = {
     'extend': {
         isCatalyst: true,
     },
-};
+}}

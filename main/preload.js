@@ -38,7 +38,7 @@ contextBridge.exposeInMainWorld('native', {
             }
         );
     },
-    getPlugins: () => {
+    /* getPlugins: () => {
         const themes = ipcRenderer.invoke('get-plugins').then(
             result => {
                 let pluginName = result[x]
@@ -83,7 +83,7 @@ contextBridge.exposeInMainWorld('native', {
                 }
             }
         )
-    },
+    }*/
     loadTheme: (theme) => {
         const file = ipcRenderer.invoke('read-user-data', `themes/${theme}`).then(
             result => {

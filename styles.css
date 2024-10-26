@@ -8,9 +8,11 @@
     --primary: #818cf8;
     --secondary: #6366f1;
     --tertiary: #4f46e5;
-    --button-primary: var(--primary);
-    --button-secondary: var(--secondary);
-    --button-tertiary: var(--tertiary);
+    --userchrome-btn-primary: var(--primary);
+    --userchrome-btn-secondary: var(--secondary);
+    --button-primary: #38bdf8;
+    --button-secondary: #0ea5e9;
+    --button-tertiary: #0891b2;
     --foreground: white;
     --border-radius: 0.5rem;
     --tab-radius: var(--border-radius);
@@ -67,15 +69,29 @@ body {
     background-color: var(--secondary);
 }
 
+#userchrome button {
+    background-color: var(--userchrome-btn-primary);
+}
+
 button,
 select {
     color: var(--foreground);
     background-color: var(--button-primary);
     border-radius: var(--border-radius);
+    padding: 8pt;
+    font-size: 12pt;
     text-align: center;
     padding: 0.25rem;
     transition: all;
     cursor: pointer;
+}
+
+#preferences-box button {
+    background-color: var(--button-secondary);
+}
+
+#preferences-box button:hover {
+    background-color: var(--button-tertiary);
 }
 
 button:hover,

@@ -9,7 +9,6 @@ sidebar = document.querySelector('#tgl-sidebar')
 
 bkmrk.addEventListener('click', () => {
     toggleBookmarks();
-    console.log('t');
 });
 
 document.getElementById('more-btn').addEventListener('click', () => {

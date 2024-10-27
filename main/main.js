@@ -52,16 +52,16 @@ app.on('web-contents-created', function (event, contents) {
     }
     contents.setWindowOpenHandler(({ url }) => {
         if (mainWindow.webContents
-        .executeJavaScript('JSON.parse(localStorage.getItem("preferences")).osb')
-        .then(localStorage => {
-            if (localStorage) {
-                mainWindow.webContents.executeJavaScript(`openInSidebar('${url}')`)
+            .executeJavaScript('JSON.parse(localStorage.getItem("preferences")).osb')
+            .then(localStorage => {
+                if (localStorage) {
+                    mainWindow.webContents.executeJavaScript(`openInSidebar('${url}')`);
 
-            } else {
-                mainWindow.webContents.executeJavaScript(`createTab('${url}')`)
-            }
-        }))
-        return { action: 'deny' }
+                } else {
+                    mainWindow.webContents.executeJavaScript(`createTab('${url}')`);
+                }
+            }))
+            return { action: 'deny' };
     });
 });
 
@@ -165,14 +165,14 @@ app.on('web-contents-created', (e, contents) => {
                 label: 'Search for "{selection}"',
                 visible: parameters.selectionText.trim().length > 0,
                 click: () => {
-                    mainWindow.webContents.executeJavaScript(`loadURL("${parameters.selectionText.trim()}")`)
+                    mainWindow.webContents.executeJavaScript(`loadURL("${parameters.selectionText.trim()}")`);
                 }
             },
             {
                 label: 'Open link in new tab',
                 visible: parameters.linkURL,
                 click: () => {
-                    mainWindow.webContents.executeJavaScript(`createTab('${parameters.linkURL}')`)
+                    mainWindow.webContents.executeJavaScript(`createTab('${parameters.linkURL}')`);
                 }
             }
         ]
@@ -204,8 +204,8 @@ if (!fs.existsSync(`${app.getPath('userData')}/themes`)) {
     fs.mkdirSync(`${app.getPath('userData')}/themes`);
 }
 
-if (!fs.existsSync(`${app.getPath("userData")}/plugins`)) {
-    fs.mkdirSync(`${app.getPath('userData')}/plugins`)
+if (!fs.existsSync(`${app.getPath('userData')}/plugins`)) {
+    fs.mkdirSync(`${app.getPath('userData')}/plugins`);
 }
 
 ipcMain.handle('get-themes', async (event) => {
@@ -218,7 +218,7 @@ ipcMain.handle('get-plugins', async (event) => {
     const path = app.getPath('userData');
     const buf = fs.readdirSync(`${path}/plugins`, { encoding: 'utf8', flag: 'r' });
     return buf;
-})
+});
 
 function download(url, dest, cb) {
     var file = fs.createWriteStream(dest);

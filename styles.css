@@ -464,7 +464,8 @@ input[type="checkbox"]:checked::after {
 }
 
 #sidebar {
-    min-width: 30%;
+    min-width: 400px;
+    width: 30%;
     height: 100%;
     position: fixed;
     right: 0;

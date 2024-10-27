@@ -176,33 +176,30 @@ button img {
     transition: all;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-grow: 1;
     max-width: 16rem;
-    padding: 8pt;
-    margin: 8pt;
-    min-width: 95px;
-    height: 95px;
+    padding: 4pt;
+    margin: 2pt;
+    width: fit-content;
+    height: 13px;
     overflow: hidden;
-    background-color: var(--button-secondary);
-    font-size: 2xl;
+    background-color: var(--secondary);
+    font-size: 12pt;
     color: var(--foreground);
-    border-radius: 9999px;
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 
 .bookmark:hover {
-    background-color: var(--button-tertiary);
-    ;
+    background-color: var(--tertiary);
 }
 
 .bookmark img {
     margin: 0.5rem;
     padding: 0.5rem;
-    width: 32pt;
-    height: 32pt;
-    background-color: var(--primary);
-    ;
+    width: 12pt;
+    height: 12pt;
+    background-color: none;
     border-radius: var(--border-radius);
 }
 
@@ -347,12 +344,9 @@ ul {
 
 #bookmarks {
     display: flex;
-    display: grid display: none;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(6, minmax(0, 1fr));
-    height: 100vh;
+    height: fit-content;
     background-color: var(--primary);
     backdrop-blur: blur(40px);
 }

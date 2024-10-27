@@ -2,7 +2,7 @@
 let activeHash = '0';
 let hasFavicon = {};
 // Functions
-ctlyststrppg = localStorage.getItem('ctlyststrppg') || './home.html';
+var ctlyststrppg = localStorage.getItem('ctlyststrppg') || './home.html';
 
 /**
  * Creates a new tab

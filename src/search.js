@@ -8,7 +8,7 @@ const engineurls = [
 ];
 
 // protocols
-const protocols = ['https', 'http', 'file', 'data'];
+const protocols = ['https', 'http', 'file', 'data', 'catalyst'];
 const searchbar = document.getElementById('searchbar');
 const suggestionsEl = document.getElementById('suggestions');
 searchbar.addEventListener('input', async() => {
@@ -49,7 +49,7 @@ searchbar.addEventListener('input', async() => {
     }
 });
 
-function loadURL(url) {
+function loadURL(url, scheck="true") {
     view = document.querySelector('.current');
     if (isSearch(url)) {
         if (!localStorage.getItem('engine')) {
@@ -70,6 +70,15 @@ function loadURL(url) {
                     catalyst.native.loadTheme(url.split('/')[6]);
                 }
             }
+        }
+        if (url.startsWith("catalyst://")) {
+            keyword = url.split("catalyst://")[1]
+            if (keyword == "home") {
+                loadURL(ctlyststrppg)
+            } else if (keyword == "preferences") {
+                togglePreferences();
+            }
+            return;
         }
         view.src = url;
         view.addEventListener('did-fail-load', () => {

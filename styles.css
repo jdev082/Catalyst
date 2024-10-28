@@ -369,6 +369,11 @@ ul {
     display: flex;
     align-items: center;
     margin: 4pt;
+    background-color: transparent !important;
+}
+
+.pref-tab:hover {
+    background-color: var(--primary) !important;
 }
 
 #preferences-box button,

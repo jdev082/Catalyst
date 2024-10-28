@@ -386,7 +386,7 @@ select:hover {
     background-color: var(--button-tertiary);
 }
 
-#preferences-box label, p {
+#preferences-box label, p, h1 {
     margin-left: 16pt;
 }
 

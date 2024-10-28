@@ -40,7 +40,6 @@
             <input id="searchbar" type="text" placeholder="Search or type a URL" />
             <button id="reload"><img src="../assets/icons/arrow-clockwise.svg" alt="Reload"></button>
             <button id="more-btn"><img src="../assets/icons/three-dots-vertical.svg" alt="More menu"></button>
-            <button id="bkmtggl"><img width="20" height="20" src="../assets/icons/bookmark.svg"></button>
             <button id="tgl-sidebar"><span class="material-symbols-rounded">view_sidebar</span></button>
         </div>
         <!-- More menu -->
@@ -62,7 +61,7 @@
         </div>
     </div>
     <!-- Bookmarks -->
-    <div id="bookmarks" class="hidden">
+    <div id="bookmarks">
         <!-- bookmarks inserted with JS -->
     </div>
     <!-- Preferences -->
@@ -82,13 +81,13 @@
         <h1 class="font-bold text-xl">Preferences</h1>
         <br />
         <div id="basic">
-            <div class="toggle-area">
+            <div class="toggle-area hidden">
                 <label for="pref-darkmode">Dark Mode?</label>
                 <input title="This feature is disabled as the implementation does not work due to recent changes."
                     id="pref-darkmode" type="checkbox" class="" disabled />
             </div>
-            <p class="text-sm">Toggle dark mode</p>
-            <br />
+            <p class="hidden">Toggle dark mode</p>
+            <br class="hidden"/>
             <label for="pref-theme">Theme</label>
             <select name="pref-theme" id="pref-theme">
                 <option value="0">Default</option>

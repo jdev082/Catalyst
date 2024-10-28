@@ -3,13 +3,8 @@ strt = document.querySelector('#pref-strt');
 reload = document.querySelector('#reload');
 backward = document.querySelector('#back');
 forward = document.querySelector('#forward');
-bkmrk = document.querySelector('#bkmtggl');
 find = document.querySelector('#find');
 sidebar = document.querySelector('#tgl-sidebar');
-
-bkmrk.addEventListener('click', () => {
-    toggleBookmarks();
-});
 
 document.getElementById('more-btn').addEventListener('click', () => {
     toggleDisplay(document.getElementById('more-menu'));

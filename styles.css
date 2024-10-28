@@ -183,7 +183,6 @@ button img {
     width: fit-content;
     height: 13px;
     overflow: hidden;
-    background-color: var(--secondary);
     font-size: 12pt;
     color: var(--foreground);
     border-radius: var(--border-radius);
@@ -191,7 +190,7 @@ button img {
 }
 
 .bookmark:hover {
-    background-color: var(--tertiary);
+    background-color: var(--secondary);
 }
 
 .bookmark img {

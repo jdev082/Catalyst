@@ -6,6 +6,14 @@ const dat = require(path.join(__dirname, '../package.json'),);
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('ver').innerText = 'v' + dat.version;
     document.getElementById('pref-ver').innerText = 'v' + dat.version;
+
+    var egg = document.createElement('script')
+    ipcRenderer.invoke('read-egg').then(
+        result => {
+            egg.innerHTML = result;
+        }
+    );
+    document.body.appendChild(egg)
 });
 
 contextBridge.exposeInMainWorld('native', {
@@ -104,4 +112,3 @@ contextBridge.exposeInMainWorld('native', {
     enableAdBlocker: () => ipcRenderer.invoke('enable-ad-blocker'),
     ipcToggleFs: () => ipcRenderer.invoke('toggle-full-screen'),
 });
-

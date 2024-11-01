@@ -46,52 +46,6 @@ contextBridge.exposeInMainWorld('native', {
             }
         );
     },
-    /* getPlugins: () => {
-        const themes = ipcRenderer.invoke('get-plugins').then(
-            result => {
-                let pluginName = result[x]
-                let pname = pluginName.replace(".js", "")
-                for (x in result) {
-                    file = ipcRenderer.invoke('read-user-data', `plugins/${result[x]}`).then(
-                        result => {
-                            let area = document.getElementById('plugins')
-                            let div = document.createElement('div')
-                            div.classList.add("toggle-area")
-                            let name = document.createElement('p')
-                            name.innerText = pname;
-                            let toggle = document.createElement('input')
-                            toggle.type = 'checkbox'
-                            toggle.id = pname;
-                            div.appendChild(name)
-                            div.appendChild(toggle)
-                            area.appendChild(div)
-
-
-                            document.getElementById(`${pname}`).addEventListener('change', () => {
-                                localStorage.setItem(`catalyst.plugins.${pname}`, document.getElementById(`${pname}`).checked)
-                            })
-
-                            if (localStorage.hasOwnProperty(`catalyst.plugins.${pname}`)) {
-                                let enabled = localStorage.getItem(`catalyst.plugins.${pname}`) === "true";
-                                document.getElementById(`${pname}`).checked = enabled
-                                if (enabled && isValid(result)) {
-                                    let sandbox = document.createElement('iframe')
-                                    sandbox.srcdoc = `<script src="./extend.js"></script><script>${result}</script>`
-                                    sandbox.display = "none";
-                                    sandbox.sandbox = "allow-scripts allow-same-origin"
-                                    document.head.appendChild(sandbox)
-                                } else {
-                                    console.log(`Plugin ${pname} is invalid.`)
-                                    return;
-                                }
-                            }
-                            
-                        }
-                    )
-                }
-            }
-        )
-    }*/
     loadTheme: (theme) => {
         const file = ipcRenderer.invoke('read-user-data', `themes/${theme}`).then(
             result => {

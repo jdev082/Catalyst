@@ -34,7 +34,6 @@ function togglePreferences() {
         addCheckboxListener(document.getElementById('pref-homewidgets'), 'homewidgets');
         document.getElementById('pref-homewidgets').checked = preferences.homewidgets;
         addSelectListener(document.getElementById('pref-theme'), 'theme');
-        addCheckboxListener(document.getElementById('pref-osb'), 'osb');
     }
 }
 
@@ -51,7 +50,7 @@ function getPreferences() {
     if (!window.localStorage.getItem('preferences')) {
         window.localStorage.setItem(
             'preferences',
-            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, osb: false })
+            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false })
         );
     }
     return JSON.parse(window.localStorage.getItem('preferences'));

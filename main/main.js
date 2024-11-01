@@ -204,19 +204,9 @@ if (!fs.existsSync(`${app.getPath('userData')}/themes`)) {
     fs.mkdirSync(`${app.getPath('userData')}/themes`);
 }
 
-if (!fs.existsSync(`${app.getPath('userData')}/plugins`)) {
-    fs.mkdirSync(`${app.getPath('userData')}/plugins`);
-}
-
 ipcMain.handle('get-themes', async (event) => {
     const path = app.getPath('userData');
     const buf = fs.readdirSync(`${path}/themes`, { encoding: 'utf8', flag: 'r' });
-    return buf;
-});
-
-ipcMain.handle('get-plugins', async (event) => {
-    const path = app.getPath('userData');
-    const buf = fs.readdirSync(`${path}/plugins`, { encoding: 'utf8', flag: 'r' });
     return buf;
 });
 

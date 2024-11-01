@@ -34,6 +34,8 @@ function togglePreferences() {
         addCheckboxListener(document.getElementById('pref-homewidgets'), 'homewidgets');
         document.getElementById('pref-homewidgets').checked = preferences.homewidgets;
         addSelectListener(document.getElementById('pref-theme'), 'theme');
+        addCheckboxListener(document.getElementById("pref-esb"), 'esb')
+        document.getElementById('pref-esb').checked = preferences.esb;
     }
 }
 
@@ -50,7 +52,7 @@ function getPreferences() {
     if (!window.localStorage.getItem('preferences')) {
         window.localStorage.setItem(
             'preferences',
-            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false })
+            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, esb: false })
         );
     }
     return JSON.parse(window.localStorage.getItem('preferences'));
@@ -119,6 +121,9 @@ function evaluatePreferences() {
         catalyst.native.loadTheme(preferences.theme);
     }
     document.body.style.fontFamily = preferences.font;
+    if (preferences.esb) {
+        document.getElementById('tgl-sidebar').classList.remove("hidden")
+    }
 }
 
 var enginespref = document.querySelector('#se');

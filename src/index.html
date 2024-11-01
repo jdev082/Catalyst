@@ -16,8 +16,6 @@
     <div id="loading">
         <img src="../assets/icon.png" alt="loading...">
     </div>
-    </div>
-    </div>
     <!-- Tab bar -->
     <div id="userchrome">
         <div id="tb-wrapper">
@@ -29,7 +27,7 @@
                         alt="Create tab"></button>
                 <button id="remove-tab" onclick="removeTab()"><img src="../assets/icons/x.svg"
                         alt="Remove tab"></button>
-                <button id="remove-tab" onclick="bookmarkCurrentTab()"><img src="../assets/icons/star.svg" width=""
+                <button id="remove-tab" onclick="bookmarkCurrentTab()"><img src="../assets/icons/star.svg"
                         alt="Bookmark tab" disabled></button>
             </div>
         </div>
@@ -78,13 +76,13 @@
             <button class="pref-tab" onClick='changePrefTab("plugins")'><span
                     class="material-symbols-rounded">extension</span>Modules</button>
         </div>
-        <h1 class="font-bold text-xl">Preferences</h1>
+        <h1>Preferences</h1>
         <br />
         <div id="basic">
             <div class="toggle-area hidden">
                 <label for="pref-darkmode">Dark Mode?</label>
                 <input title="This feature is disabled as the implementation does not work due to recent changes."
-                    id="pref-darkmode" type="checkbox" class="" disabled />
+                    id="pref-darkmode" type="checkbox" disabled />
             </div>
             <p class="hidden">Toggle dark mode</p>
             <br class="hidden"/>
@@ -96,7 +94,7 @@
             <br />
             <div class="toggle-area">
                 <label for="pref-autocomplete">Autocomplete </label>
-                <input id="pref-autocomplete" type="checkbox" class="" />
+                <input id="pref-autocomplete" type="checkbox" />
             </div>
             <p class="text-sm">Search Autocomplete</p>
             <br />
@@ -111,12 +109,12 @@
         </div>
         <div class="hidden" id="advanced">
             <label for="pref-strt">Startup Page</label>
-            <input type="text" class="text-black p-1.5 rounded-sm" id="pref-strt" />
+            <input type="text" id="pref-strt" />
             <p class="text-sm">Sets a custom startup page.</p>
             <br />
             <div class="toggle-area">
                 <label for="pref-usrchr">Custom CSS</label>
-                <input id="pref-usrchr" type="checkbox" class="" />
+                <input id="pref-usrchr" type="checkbox" />
             </div>
             <br />
             <p class="text-sm">Loads custom css from the userChrome.css file</p>
@@ -140,12 +138,12 @@
         <div class="hidden" id="experiments">
             <div class="toggle-area">
                 <label for="pref-dm"><b>Experimental</b> Force Dark Mode</label>
-                <input id="pref-dm" type="checkbox" class="" />
+                <input id="pref-dm" type="checkbox" />
             </div>
             <p class="text-sm">Toggles forced dark mode for all sites.</p>
             <br />
             <label for="pref-useragent"><b>Experimental</b> User Agent: </label>
-            <input id="pref-useragent" type="text" class="dark:text-gray-800 p-1 rounded"
+            <input id="pref-useragent" type="text"
                 placeholder="Catalyst/{{version}}" value="Catalyst/{{version}}" />
             <p class="text-sm">Sets a custom user agent.</p>
             <br />
@@ -155,8 +153,6 @@
             </div>
             <p>Enables widgets on the default home page.</p>
         </div>
-        <!-- <div class="hidden" id="plugins">
-        </div> -->
         <br />
         <div style="margin-left: 16pt;">
         <button id="clearbtn" onclick="clearData()">Reset Preferences</button>
@@ -176,15 +172,14 @@
     <div id="welcomepage">
         <h1>Welcome to Catalyst!</h1>
         <button onClick="closeWelcome()">Close</button>
-        <button onClick="togglePreferences()">Customize Your
-            Browser!</button>
+        <button onClick="togglePreferences()">Customize Catalyst</button>
     </div>
     <!-- Sidebar -->
     <webview class="hidden" id="sidebar" src="https://www.google.com"></webview>
     <!-- Webviews generated with JS -->
     <div id="webviews"></div>
     <!-- Find Window -->
-    <input id="find" class="hidden w-full fixed bottom-0" placeholder="Search..." />
+    <input id="find" placeholder="Search..." />
     <script src="./functions.js"></script>
     <script src="./startup.js" defer></script>
     <script src="./bookmarks.js"></script>

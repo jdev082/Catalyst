@@ -220,16 +220,6 @@ function download(url, dest, cb) {
     });
 }
 
-download("https://raw.githubusercontent.com/CatalystDevOrg/egg/refs/heads/master/egg.js", `${app.getPath('userData')}/egg.js`, () => {
-    return;
-});
-
-ipcMain.handle('read-egg', async (event) => {
-    const file = `${app.getPath('userData')}/egg.js`;
-    const buf = fs.readFileSync(`${app.getPath('userData')}/egg.js`, { encoding: 'utf8', flag: 'r'});
-    return buf;
-})
-
 ipcMain.handle('download-theme', async (event, url, name) => {
     download(url, `${app.getPath('userData')}/themes/${name}`, () => {
         return;

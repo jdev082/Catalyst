@@ -36,6 +36,8 @@ function togglePreferences() {
         addSelectListener(document.getElementById('pref-theme'), 'theme');
         addCheckboxListener(document.getElementById("pref-esb"), 'esb')
         document.getElementById('pref-esb').checked = preferences.esb;
+        addTextListener(document.getElementById('pref-cpa'), 'cpa')
+        document.getElementById('pref-cpa').value = preferences.cpa;
     }
 }
 

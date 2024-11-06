@@ -8,7 +8,11 @@ const engineurls = [
 ];
 
 // protocols
-const protocols = ['https', 'http', 'file', 'data', 'catalyst'];
+var protocols = ['https', 'http', 'file', 'data', 'catalyst'];
+for (let i = 0; i < preferences.cpa.length; i++) {
+    protocols.push(JSON.parse(JSON.stringify(preferences.cpa)))[1];
+}
+
 const searchbar = document.getElementById('searchbar');
 const suggestionsEl = document.getElementById('suggestions');
 searchbar.addEventListener('input', async() => {

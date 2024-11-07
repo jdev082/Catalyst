@@ -120,7 +120,9 @@ function evaluatePreferences() {
         }
         catalyst.native.loadTheme(preferences.theme);
     }
-    document.body.style.fontFamily = preferences.font;
+    if (preferences.font) {
+        document.body.style.fontFamily = preferences.font;
+    }
     if (preferences.esb) {
         document.getElementById('tgl-sidebar').classList.remove("hidden")
     }

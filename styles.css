@@ -266,6 +266,19 @@ ul {
     animation: spin 1s linear infinite;
 }
 
+#find {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 8pt;
+    background-color: var(--primary);
+    color: var(--foreground);
+}
+
+#find::placeholder {
+    color: var(--foreground);
+}
+
 #utility {
     display: flex;
     padding-bottom: 0.25rem;

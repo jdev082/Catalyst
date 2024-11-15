@@ -25,7 +25,7 @@
         "electron-builder": "^24.13.3",
         "electron-builder-squirrel-windows": "^24.13.3",
         "electron-reloader": "^1.2.3",
-        "eslint": "^8.57.0"
+        "eslint": "^9.15.0"
     },
     "dependencies": {
         "@cliqz/adblocker-electron": "^1.27.3",

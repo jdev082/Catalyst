@@ -54,7 +54,9 @@
             "icon": "assets/icon-scaled.ico",
             "target": [
                 "portable",
-                "squirrel"
+                "squirrel",
+                "msi",
+                "nsis"
             ]
         },
         "mac": {

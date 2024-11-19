@@ -23,21 +23,18 @@
                 <!-- tabs are inserted with JS -->
             </div>
             <div class="tabs-btns">
-                <button id="create-tab" onclick="createTab()"><img src="../assets/icons/plus.svg"
-                        alt="Create tab"></button>
-                <button id="remove-tab" onclick="removeTab()"><img src="../assets/icons/x.svg"
-                        alt="Remove tab"></button>
-                <button id="remove-tab" onclick="bookmarkCurrentTab()"><img src="../assets/icons/star.svg"
-                        alt="Bookmark tab" disabled></button>
+                <button id="create-tab" onclick="createTab()"><span class="material-symbols-rounded">add</span></button>
+                <button id="remove-tab" onclick="removeTab()"><span class="material-symbols-rounded">close</span></button>
+                <button id="remove-tab" onclick="bookmarkCurrentTab()"><span class="material-symbols-rounded">bookmark</span></button>
             </div>
         </div>
         <!-- Utility bar -->
         <div id="utility">
-            <button id="back"><img src="../assets/icons/arrow-left.svg" alt="Backward"></button>
-            <button id="forward"><img src="../assets/icons/arrow-right.svg" alt="Forward"></button>
+            <button id="back"><span class="material-symbols-rounded">arrow_back</span></button>
+            <button id="forward"><span class="material-symbols-rounded">arrow_forward</span></button>
             <input id="searchbar" type="text" placeholder="Search or type a URL" />
-            <button id="reload"><img src="../assets/icons/arrow-clockwise.svg" alt="Reload"></button>
-            <button id="more-btn"><img src="../assets/icons/three-dots-vertical.svg" alt="More menu"></button>
+            <button id="reload"><span class="material-symbols-rounded">refresh</span></button>
+            <button id="more-btn"><span class="material-symbols-rounded">more_vert</span></button>
             <button id="tgl-sidebar" class="hidden"><span class="material-symbols-rounded">view_sidebar</span></button>
         </div>
         <!-- More menu -->

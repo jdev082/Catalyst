@@ -433,8 +433,14 @@ select:hover {
     width: 100%;
     height: fit-content;
     background-color: var(--primary);
-    ;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#welcomepage * {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2pt;
+    margin-right: 2pt;
 }
 
 input[type="checkbox"] {

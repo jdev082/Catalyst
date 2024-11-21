@@ -32,7 +32,7 @@
         "cross-fetch": "^4.0.0",
         "electron-context-menu": "^3.6.1",
         "electron-squirrel-startup": "^1.0.1",
-        "material-symbols": "^0.18.0"
+        "material-symbols": "^0.27.1"
     },
     "build": {
         "appId": "org.eu.getcatalyst.catalyst",

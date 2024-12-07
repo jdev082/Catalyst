@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <input type="text" id="server" placeholder="Server">
+    <input type="text" id="channel" placeholder="Channel">
+    <input type="text" id="nickname" placeholder="Nickname">
+    <button onclick="connect()">Connect</button>
+
+    <hr />
+    <br />
+
+    <div id="messages"></div>
+    <input type="text" id="message">
+    <button placeholder="Hello, world!" onclick="sendMessage()">Send</button>
+
+    <script>
+        var socket;
+
+        function connect() {
+            var server = document.getElementById("server").value;
+            var channel = document.getElementById("channel").value;
+            var nickname = document.getElementById("nickname").value;
+
+            socket = new WebSocket("ws://" + server);
+
+            socket.onopen = function (event) {
+                socket.send("NICK " + nickname + "\r\n");
+                socket.send("USER " + nickname + " 0 * :" + nickname + "\r\n");
+                socket.send("JOIN " + channel + "\r\n");
+            };
+
+            socket.onmessage = function (event) {
+                var messages = document.getElementById("messages");
+                var message = document.createElement("p");
+                message.textContent = event.data;
+                messages.appendChild(message);
+            };
+        }
+
+        function sendMessage() {
+            var message = document.getElementById("message").value;
+            socket.send("PRIVMSG " + channel + " :" + message + "\r\n");
+            document.getElementById("message").value = "";
+        }
+    </script>
+</body>
+
+</html>

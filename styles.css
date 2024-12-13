@@ -484,7 +484,6 @@ input[type="checkbox"]:checked::after {
     width: 30%;
     height: 100%;
     position: fixed;
-    right: 0;
     height: calc(100vh - 70px);
     z-index: 0;
 }

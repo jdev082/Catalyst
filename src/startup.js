@@ -1,5 +1,7 @@
 // add startup code here
 // dont touch this, it makes the loading screen work
+var sb = document.getElementById('sb')
+
 if(document.readyState === 'ready' || document.readyState === 'complete') {
     document.getElementById('loading').classList.add('hidden');
 } else {
@@ -20,3 +22,10 @@ if (localStorage.getItem('bookmarks') < 1) {
 }
 
 native.getThemes();
+
+var sb = document.getElementById('sidebar')
+if (localStorage.getItem('sbside') == null || localStorage.getItem('sbside') == 1) {
+    sb.style.right = 0;
+} else {
+    sb.style.left = 0;
+}

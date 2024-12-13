@@ -67,7 +67,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 </tr>
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/CocoTheMii>
+        <a href=https://github.com/cocoelacanth>
             <img src=https://avatars.githubusercontent.com/u/44563370?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
             <br />
             <sub style="font-size:14px"><b>Coco</b></sub>

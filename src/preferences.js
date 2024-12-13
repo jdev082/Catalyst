@@ -134,6 +134,23 @@ enginespref.onchange = (event) => {
     localStorage.setItem('engine', index);
 };
 
+var sbsidepref = document.getElementById('pref-sbside')
+var sb = document.getElementById('sidebar')
+sbsidepref.onchange = (event) => {
+    var index = sbsidepref.options.selectedIndex;
+    console.log(index)
+    localStorage.setItem('sbside', index)
+    if (index == 0) {
+        sb.style.right = "unset";
+        sb.style.left = 0;
+    } 
+    if (index == 1) {
+        sb.style.left = "unset";
+        sb.style.right = 0;
+    }
+}
+sbsidepref.options.selectedIndex = localStorage.getItem('sbside') || 1
+
 enginespref.value = localStorage.getItem('engine') || '1';
 
 function changePrefTab(itm) {

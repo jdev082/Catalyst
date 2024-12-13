@@ -50,6 +50,16 @@ function bookmarkCurrentTab() {
     storeBookmarks();
 }
 
+function progBookmarkTab(u, t) {
+    updateBookmarksVar();
+    const toPush = {
+        title: t,
+        url: u,
+    }
+    bookmarks.push(toPush);
+    storeBookmarks();
+}
+
 /**
  * Updates the bookmarks variable and displays the bookmarks
  */

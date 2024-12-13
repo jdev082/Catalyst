@@ -1,11 +1,12 @@
 /* eslint-enable no-undef */
 /* eslint-enable no-unused-vars */
 const { ElectronBlocker } = require('@cliqz/adblocker-electron');
-const { app, BrowserWindow, Menu, session, ipcMain } = require('electron');
+const { app, BrowserWindow, Menu, session, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
 const contextMenu = require('electron-context-menu');
+const parse = require('bookmarks-parser')
 
 if (require('electron-squirrel-startup')) app.quit();
 
@@ -144,7 +145,41 @@ const template = [{
     click: function () {
         mainWindow.webContents.toggleDevTools();
     },
+},
+{
+    label: 'htmlmarks',
+    accelerator: 'CmdOrCtrl+H',
+    click: function() {
 
+        dialog.showOpenDialog({
+            properties: ['openFile', 'multiSelections']
+        }).then(result => {
+            if (!result.canceled) {
+                const filePaths = result.filePaths;  
+                const file = filePaths[0]
+                try {
+                    const buf = fs.readFileSync(file, { encoding: 'utf8', flag: 'r' });
+                    parse(buf, function(e,r) {
+                        console.log(e)
+                        console.log(r['bookmarks'][0].children)
+                        marks = r['bookmarks'][0].children
+                        for (var i = 0; i < marks.length; i++) 
+                            { 
+                                url = marks[i]['url']; 
+                                title = marks[i]['title']
+                                js = `progBookmarkTab("${url}", "${title}")`
+                                console.log(url)
+                                mainWindow.webContents.executeJavaScript(js)
+                            }
+                    })
+                } catch {
+                    return;
+                }
+            }
+        }).catch(err => {
+            console.error('Error opening file dialog:', err);
+        });
+    }
 }];
 
 app.on('web-contents-created', (e, contents) => {

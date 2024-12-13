@@ -147,7 +147,7 @@ const template = [{
     },
 },
 {
-    label: 'htmlmarks',
+    label: 'Import Bookmarks',
     accelerator: 'CmdOrCtrl+H',
     click: function() {
 

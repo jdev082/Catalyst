@@ -209,6 +209,13 @@ app.on('web-contents-created', (e, contents) => {
                 click: () => {
                     mainWindow.webContents.executeJavaScript(`createTab('${parameters.linkURL}')`);
                 }
+            },
+            {
+                label: 'Open link in sidebar',
+                visible: parameters.linkURL,
+                click: () => {
+                    mainWindow.webContents.executeJavaScript(`sb.src = '${parameters.linkURL}'`)
+                }
             }
         ]
     });

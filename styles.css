@@ -480,12 +480,17 @@ input[type="checkbox"]:checked::after {
 }
 
 #sidebar {
+    background-color: var(--secondary);
     min-width: 400px;
     width: 30%;
     height: 100%;
     position: fixed;
     height: calc(100vh - 70px);
     z-index: 0;
+}
+
+#sidebarwv {
+    height: 95%;
 }
 
 webview {

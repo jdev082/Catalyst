@@ -175,13 +175,16 @@
         <button onClick="togglePreferences()">Customize Catalyst</button>
     </div>
     <!-- Sidebar -->
-    <webview class="hidden" id="sidebar" src="https://www.google.com"></webview>
+    <div class="hidden" id="sidebar">
+        <h1>Sidebar</h1>
+        <webview id="sidebarwv" src="https://example.org"></webview>
+    </div>
     <!-- Webviews generated with JS -->
     <div id="webviews"></div>
     <!-- Find Window -->
     <input class="hidden" id="find" placeholder="Search..." />
     <script src="./functions.js"></script>
-    <script src="./startup.js" defer></script>
+    <script src="./startup.js"></script>
     <script src="./bookmarks.js"></script>
     <script src="./listeners.js"></script>
 </body>

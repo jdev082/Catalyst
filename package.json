@@ -23,7 +23,7 @@
     "devDependencies": {
         "electron": "^33.3.0",
         "electron-builder": "^24.13.3",
-        "electron-builder-squirrel-windows": "^24.13.3",
+        "electron-builder-squirrel-windows": "^25.1.8",
         "electron-reloader": "^1.2.3",
         "eslint": "^8.57.0"
     },

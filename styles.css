@@ -80,6 +80,10 @@ body {
     background-color: var(--userchrome-btn-primary);
 }
 
+#userchrome button:hover {
+    background-color: var(--userchrome-btn-secondary);
+}
+
 button,
 select {
     color: var(--foreground);

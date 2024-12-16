@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary: #818cf8;
-    --secondary: #6366f1;
-    --tertiary: #4f46e5;
+    --tertiary: #a5b4fc;
+    --secondary: #818cf8;
+    --primary: #6366f1;
     --userchrome-btn-primary: var(--primary);
     --userchrome-btn-secondary: var(--secondary);
     --button-primary: #a855f7;
@@ -69,11 +69,11 @@ body {
 }
 
 .active-tab {
-    background-color: var(--tertiary);
+    background-color: var(--secondary);
 }
 
 .tab:hover {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
 }
 
 #userchrome button {
@@ -346,7 +346,7 @@ ul {
     width: fit-content;
     height: fit-content;
     color: var(--foreground);
-    background-color: var(--secondary);
+    background-color: var(--primary);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 

@@ -20,6 +20,7 @@
     }
 
     .widgets {
+        display: none;
         margin: 32pt;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -170,6 +171,7 @@
 
         if (preferences.homewidgets) { 
             setInterval(updateTime, 1000);
+            widgets.display = 'unset';
         }
     </script>
 

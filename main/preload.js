@@ -1,11 +1,41 @@
 const path = require('path');
 const { ipcRenderer, contextBridge } = require('electron');
+const i18n = require('vanilla-i18n')
+const es = require('../langs/es.js')
 
 const dat = require(path.join(__dirname, '../package.json'),);
+
+function applyTranslations(element) {
+    var all = document.body.getElementsByTagName(element);
+
+    for (var i = 0, max = all.length; i < max; i++) {
+        if (all[i].querySelector("span") == null) {
+            all[i].innerText = all[i].innerText.translate(lang)
+        }
+    }
+}
 
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('ver').innerText = 'v' + dat.version;
     document.getElementById('pref-ver').innerText = 'v' + dat.version;
+
+        lang = localStorage.getItem('catalyst.localization.language')
+        switch(lang) {
+            case "es":
+                i18n.setTranslate(es, 'es')
+                break;
+            default:
+                break;
+        }
+        i18n.setTranslate(lang, lang)
+        applyTranslations('button', lang)
+        applyTranslations('p', lang)
+        applyTranslations('h1', lang)
+        applyTranslations('h2', lang)
+        applyTranslations('h3', lang)
+        applyTranslations('li', lang)
+        applyTranslations('label', lang)
+        applyTranslations('button', lang)
 });
 
 contextBridge.exposeInMainWorld('native', {

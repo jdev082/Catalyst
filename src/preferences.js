@@ -136,6 +136,14 @@ enginespref.onchange = (event) => {
 
 enginespref.value = localStorage.getItem('engine') || '1';
 
+var langpref = document.querySelector('#lang');
+langpref.onchange = (event) => {
+    var index = langpref.value;
+    localStorage.setItem('catalyst.localization.language', index);
+};
+
+langpref.value = localStorage.getItem('catalyst.localization.language') || 'en'
+
 function changePrefTab(itm) {
     document.querySelector(`#${itm}`).classList.remove('hidden');
     others = document.querySelector('#preferences-box').getElementsByTagName('*');

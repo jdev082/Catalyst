@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('ver').innerText = 'v' + dat.version;
     document.getElementById('pref-ver').innerText = 'v' + dat.version;
 
-    if (localStorage.getItem('catalyst.localization.enable')) {
         lang = localStorage.getItem('catalyst.localization.language')
         switch(lang) {
             case "es":
@@ -37,7 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
         applyTranslations('li', lang)
         applyTranslations('label', lang)
         applyTranslations('button', lang)
-    }
 });
 
 contextBridge.exposeInMainWorld('native', {

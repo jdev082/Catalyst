@@ -157,7 +157,7 @@ button img {
 
 .moreMenuItem:hover {
     color: var(--foreground);
-    background-color: #4F46E5;
+    background-color: var(--primary);
 }
 
 .moreMenuItem {

@@ -21,9 +21,9 @@
     "email": "email@localhost",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^33.1.0",
-        "electron-builder": "^24.13.3",
-        "electron-builder-squirrel-windows": "^24.13.3",
+        "electron": "^33.3.0",
+        "electron-builder": "^25.1.8",
+        "electron-builder-squirrel-windows": "^25.1.8",
         "electron-reloader": "^1.2.3",
         "eslint": "^8.57.0"
     },
@@ -32,8 +32,8 @@
         "cross-fetch": "^4.0.0",
         "electron-context-menu": "^3.6.1",
         "electron-squirrel-startup": "^1.0.1",
-        "material-symbols": "^0.18.0",
         "vanilla-i18n": "^1.0.8"
+        "material-symbols": "^0.27.2"
     },
     "build": {
         "appId": "org.eu.getcatalyst.catalyst",

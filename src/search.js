@@ -65,9 +65,9 @@ function loadURL(url, scheck="true") {
         }
         if (url.startsWith('https://raw.githubusercontent.com/CatalystDevOrg/Themes/master/') && url.endsWith('.css')) {
             if (confirm('This link looks like a theme URL. Attempt to install theme?')) {
-                catalyst.native.downloadTheme(url, url.split('/')[6]);
+                native.downloadTheme(url, url.split('/')[6]);
                 if (confirm(`Theme ${url.split('/')[6]} installed successfully! Switch to theme?`)) {
-                    catalyst.native.loadTheme(url.split('/')[6]);
+                    native.loadTheme(url.split('/')[6]);
                 }
             }
         }

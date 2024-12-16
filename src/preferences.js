@@ -118,7 +118,7 @@ function evaluatePreferences() {
         if (preferences.theme == 0) {
             return;
         }
-        catalyst.native.loadTheme(preferences.theme);
+        native.loadTheme(preferences.theme);
     }
     if (preferences.font) {
         document.body.style.fontFamily = preferences.font;

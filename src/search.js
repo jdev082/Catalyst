@@ -74,7 +74,8 @@ function loadURL(url, scheck="true") {
         if (url.startsWith("catalyst://")) {
             keyword = url.split("catalyst://")[1]
             if (keyword == "home") {
-                loadURL(ctlyststrppg)
+                // loadURL(ctlyststrppg)
+                alert('not supported.')
             } else if (keyword == "preferences") {
                 togglePreferences();
             }

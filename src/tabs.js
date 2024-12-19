@@ -108,13 +108,6 @@ function addListeners(view, hash) {
         if (engineSupportsAC()) {
             removeChildren(document.getElementById('autocomplete-suggestions'));
         }
-        view.executeJavaScript(`
-            window.addEventListener('message', (event) => {
-                const data = event.data;
-                window.catalyst = data;
-            });
-        `, true);
-        view.contentWindow.postMessage(JSON.parse(catalyst).extend, '*')
     });
     view.addEventListener('did-start-loading', () => {
         tab.classList.add('animate-pulse');

@@ -31,7 +31,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/webdev03>
-            <img src=https://private-avatars.githubusercontent.com/u/75148774?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzA3ODAsIm5iZiI6MTczNDYyOTU4MCwicGF0aCI6Ii91Lzc1MTQ4Nzc0In0.anlKYR2epP58yCGc5O2Tl45_dI_lTSw0fkpcm_-0acM&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Devarsh/>
+            <img src=https://private-avatars.githubusercontent.com/u/75148774?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzE2ODAsIm5iZiI6MTczNDYzMDQ4MCwicGF0aCI6Ii91Lzc1MTQ4Nzc0In0.IjFGRteWN7JOFnMmVF_jWCg7A9vaWN8K2zBV3zGDsdY&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Devarsh/>
             <br />
             <sub style="font-size:14px"><b>Devarsh</b></sub>
         </a>
@@ -68,14 +68,14 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/cocoelacanth>
-            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzA0MjAsIm5iZiI6MTczNDYyOTIyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.MfeKqXpFwuOLvjJNVwVSuPJGKMBBph4b8yDRYQCQRWs&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
+            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzEzMjAsIm5iZiI6MTczNDYzMDEyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.TIH68Aujal72Mtgk7AsBKEju3CdW8gSL5BMogdPDqRw&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
             <br />
             <sub style="font-size:14px"><b>Coco</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Drsheppard01>
-            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzA0ODAsIm5iZiI6MTczNDYyOTI4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.Giu_H0apR0rTFGEwuCWnAkY55t6yt8fOCsBNnBHsFkQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
+            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzEzODAsIm5iZiI6MTczNDYzMDE4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.ihpj5-MWcYzRhCJ_m8H59ZStcqAs1V7z_Er6gQ4D03w&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
             <br />
             <sub style="font-size:14px"><b>DrSheppard</b></sub>
         </a>
@@ -89,7 +89,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/nmsderp>
-            <img src=https://private-avatars.githubusercontent.com/u/130254323?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzA3ODAsIm5iZiI6MTczNDYyOTU4MCwicGF0aCI6Ii91LzEzMDI1NDMyMyJ9.YHBSom6jB5UoNlmzgK5VK_WibPmipHBEeqok0TjtrYg&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=nmsderp/>
+            <img src=https://private-avatars.githubusercontent.com/u/130254323?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2MzE2ODAsIm5iZiI6MTczNDYzMDQ4MCwicGF0aCI6Ii91LzEzMDI1NDMyMyJ9.xZWCRm8q8ZfoAQxNbVGqNlD_WDQMwycrF0WuM17Ed-Q&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=nmsderp/>
             <br />
             <sub style="font-size:14px"><b>nmsderp</b></sub>
         </a>

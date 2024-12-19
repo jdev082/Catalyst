@@ -24,42 +24,42 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/jdev082>
-            <img src=https://private-avatars.githubusercontent.com/u/92550746?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDkyNjAsIm5iZiI6MTczNDY0ODA2MCwicGF0aCI6Ii91LzkyNTUwNzQ2In0.VHoWruHxExMdaNF_xGtJSi-HpyTMUU-DALfdIUsYJDs&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jdev08/>
+            <img src=https://private-avatars.githubusercontent.com/u/92550746?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAxNjAsIm5iZiI6MTczNDY0ODk2MCwicGF0aCI6Ii91LzkyNTUwNzQ2In0.cEru3SfxP7s68dxe1UvAftiPoEf4tM5IRx0XR97t1sI&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jdev08/>
             <br />
             <sub style="font-size:14px"><b>jdev08</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/webdev03>
-            <img src=https://private-avatars.githubusercontent.com/u/75148774?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDk2ODAsIm5iZiI6MTczNDY0ODQ4MCwicGF0aCI6Ii91Lzc1MTQ4Nzc0In0.VWOHzeYnO0cX_nicBiTMH9KaNOCVsYvew3GdfR7qTC0&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Devarsh/>
+            <img src=https://private-avatars.githubusercontent.com/u/75148774?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA1ODAsIm5iZiI6MTczNDY0OTM4MCwicGF0aCI6Ii91Lzc1MTQ4Nzc0In0.WHw_zUqlo-O_iSGgvt_lBVfz8vo6Ku4VOH0KJSZ_FIU&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Devarsh/>
             <br />
             <sub style="font-size:14px"><b>Devarsh</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ScolderCreations>
-            <img src=https://private-avatars.githubusercontent.com/u/69083943?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDk4MDAsIm5iZiI6MTczNDY0ODYwMCwicGF0aCI6Ii91LzY5MDgzOTQzIn0.zdtNBfcMghDg3k6UmzNYcHgJAV5oMeIyjAveNt1DQJM&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Scolder/>
+            <img src=https://private-avatars.githubusercontent.com/u/69083943?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA3MDAsIm5iZiI6MTczNDY0OTUwMCwicGF0aCI6Ii91LzY5MDgzOTQzIn0.d8THuYwlT1ghG51feGAL3urQlTNi4C_jqBtKnAaecwY&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Scolder/>
             <br />
             <sub style="font-size:14px"><b>Scolder</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/VelocityDesign>
-            <img src=https://private-avatars.githubusercontent.com/u/24457862?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDkyNjAsIm5iZiI6MTczNDY0ODA2MCwicGF0aCI6Ii91LzI0NDU3ODYyIn0.LTNrQHTLeuiXu9iHkK1y4sJjD-3Ym7kAUWkqdkv8vtk&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Judah Brown/>
+            <img src=https://private-avatars.githubusercontent.com/u/24457862?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAxNjAsIm5iZiI6MTczNDY0ODk2MCwicGF0aCI6Ii91LzI0NDU3ODYyIn0.ZsW2nbZvP48lV0iizl-40NkzdKQapFYrl24CDScoYIQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Judah Brown/>
             <br />
             <sub style="font-size:14px"><b>Judah Brown</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Mbrick2>
-            <img src=https://private-avatars.githubusercontent.com/u/90691415?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDk5MjAsIm5iZiI6MTczNDY0ODcyMCwicGF0aCI6Ii91LzkwNjkxNDE1In0.9ipvqXzuWxK3rl3VTJvjgqBXH0B3eq-Ueo6fZ_AkWGA&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Mbrick2/>
+            <img src=https://private-avatars.githubusercontent.com/u/90691415?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA4MjAsIm5iZiI6MTczNDY0OTYyMCwicGF0aCI6Ii91LzkwNjkxNDE1In0.cQcdXyih-Jh8dW6pjm2yevmAjCw59lQfPpmryaZ4GEA&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Mbrick2/>
             <br />
             <sub style="font-size:14px"><b>Mbrick2</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hello-smile6>
-            <img src=https://private-avatars.githubusercontent.com/u/73048226?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDkyNjAsIm5iZiI6MTczNDY0ODA2MCwicGF0aCI6Ii91LzczMDQ4MjI2In0.mQ4hP0vK67a6lYWRFRQ3bsO6-gUXDMB6MHIDpNpSmXg&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hello-smile6/>
+            <img src=https://private-avatars.githubusercontent.com/u/73048226?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAxNjAsIm5iZiI6MTczNDY0ODk2MCwicGF0aCI6Ii91LzczMDQ4MjI2In0.vSci7rEeXAIXX-xenlTwcE2CA3obYRUEP_SEJy5CjWE&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hello-smile6/>
             <br />
             <sub style="font-size:14px"><b>hello-smile6</b></sub>
         </a>
@@ -68,28 +68,28 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/cocoelacanth>
-            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDkzMjAsIm5iZiI6MTczNDY0ODEyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.6nrFEbnZleOs14rCzEkfDzwPAS5RljnpW4WFxn3YtQg&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
+            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAyMjAsIm5iZiI6MTczNDY0OTAyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.K7f1yX_WPtKC5ChkQKBe1XfLLEcyf7q-dLYOMAX2y3g&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
             <br />
             <sub style="font-size:14px"><b>Coco</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Drsheppard01>
-            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDkzODAsIm5iZiI6MTczNDY0ODE4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.TeXjbqqr0qSRde_li8g4PILnVrWQJ8_6wFzpI-ZyXvI&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
+            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAyODAsIm5iZiI6MTczNDY0OTA4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.9ti--mxFQ2TyndlL6Lj12vqhVL0UQrYU1KZoO3opdxQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
             <br />
             <sub style="font-size:14px"><b>DrSheppard</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/TechStudent10>
-            <img src=https://private-avatars.githubusercontent.com/u/76978184?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDk4NjAsIm5iZiI6MTczNDY0ODY2MCwicGF0aCI6Ii91Lzc2OTc4MTg0In0.6cy1-ZWF0FFfozW7d6tt_pq4yOKis0080A6_JF7dkdQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TechStudent10/>
+            <img src=https://private-avatars.githubusercontent.com/u/76978184?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA3NjAsIm5iZiI6MTczNDY0OTU2MCwicGF0aCI6Ii91Lzc2OTc4MTg0In0.Bguk8p75MhRAbYVciUUxaVTRDlo1-N2h64zRYHL5yJg&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=TechStudent10/>
             <br />
             <sub style="font-size:14px"><b>TechStudent10</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/nmsderp>
-            <img src=https://private-avatars.githubusercontent.com/u/130254323?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NDk2ODAsIm5iZiI6MTczNDY0ODQ4MCwicGF0aCI6Ii91LzEzMDI1NDMyMyJ9._asXqhNRVFQuVm_zFX_CBXlv9JMlS2krRBkgd5qhF7o&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=nmsderp/>
+            <img src=https://private-avatars.githubusercontent.com/u/130254323?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA1ODAsIm5iZiI6MTczNDY0OTM4MCwicGF0aCI6Ii91LzEzMDI1NDMyMyJ9.9IymP2BBXrwl1gJG3o_2W0-wVes2oT4HFYJ1Ze3FRM4&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=nmsderp/>
             <br />
             <sub style="font-size:14px"><b>nmsderp</b></sub>
         </a>

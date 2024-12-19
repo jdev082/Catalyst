@@ -55,6 +55,7 @@ async function createTab(url) {
     document.getElementById('webviews').appendChild(view);
     switchTabs(randomHash);
     document.getElementById('searchbar').focus();
+    native.setTitlebarTitle(view.title)
 }
 createTab();
 
@@ -86,6 +87,7 @@ function switchTabs(tabHash) {
         document.getElementById('searchbar').value = view.src;
     }
     activeHash = tabHash;
+    native.setTitlebarTitle(view.title);
 }
 
 function addListeners(view, hash) {

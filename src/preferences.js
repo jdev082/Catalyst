@@ -116,7 +116,6 @@ function evaluatePreferences() {
             native.unloadTheme();
         }
         if (preferences.theme == 0) {
-            return;
         }
         native.loadTheme(preferences.theme);
     }

@@ -57,4 +57,7 @@ contextBridge.exposeInMainWorld('native', {
     },
     enableAdBlocker: () => ipcRenderer.invoke('enable-ad-blocker'),
     ipcToggleFs: () => ipcRenderer.invoke('toggle-full-screen'),
+    setTitlebarTitle: (title) => {
+        ipcRenderer.invoke('set-titlebar-title', title)
+    }
 });

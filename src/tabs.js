@@ -123,6 +123,7 @@ function addListeners(view, hash) {
     });
     view.addEventListener('page-title-updated', (e) => {
         tab.getElementsByTagName('span')[0].innerText = e.title;
+        native.setTitlebarTitle(e.title);
         let viewURL = view.getURL();
         if (!viewURL.startsWith('file://')) {
             document.getElementById('searchbar').value = viewURL;

@@ -272,5 +272,9 @@ ipcMain.handle('toggle-full-screen', async (event) => {
     mainWindow.setFullScreen(!mainWindow.isFullScreen());
 });
 
+ipcMain.handle('set-titlebar-title', async (event, title) => {
+    mainWindow.title = 'Catalyst - ' + title;
+}); 
+
 const menu = Menu.buildFromTemplate(template);
 Menu.setApplicationMenu(menu);

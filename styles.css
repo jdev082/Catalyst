@@ -430,7 +430,6 @@ select:hover {
 }
 
 #welcomepage {
-    display: none;
     padding: 0.375rem;
     border-bottom-right-radius: 0.125rem;
     border-bottom-left-radius: 0.125rem;

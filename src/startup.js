@@ -23,14 +23,6 @@ if (localStorage.getItem('bookmarks') < 1) {
 
 native.getThemes();
 
-var sb = document.getElementById('sidebar')
-var sbwv = document.getElementById('sidebarwv')
-if (localStorage.getItem('sbside') == null || localStorage.getItem('sbside') == 1) {
-    sb.style.right = 0;
-} else {
-    sb.style.left = 0;
-}
-
 var engine = localStorage.getItem('engine')
 
 sbwv.addEventListener('did-attach', () => {

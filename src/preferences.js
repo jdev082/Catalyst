@@ -34,6 +34,8 @@ function togglePreferences() {
         addSelectListener(document.getElementById('pref-theme'), 'theme');
         addCheckboxListener(document.getElementById("pref-esb"), 'esb')
         document.getElementById('pref-esb').checked = preferences.esb;
+        addSelectListener(document.getElementById('se'), 'searchengine')
+        addSelectListener(document.getElementById('pref-sbside'), 'sidebarside')
     }
 }
 
@@ -123,6 +125,16 @@ function evaluatePreferences() {
     if (preferences.esb) {
         document.getElementById('tgl-sidebar').classList.remove("hidden")
     }
+    if (preferences.sidebarside) {
+    var sb = document.getElementById('sidebar')
+    if (preferences.sidebarside === '0') {
+        sb.style.right = "unset";
+        sb.style.left = 0;
+    } 
+    if (preferences.sidebarside === '1' ){
+        sb.style.left = "unset";
+        sb.style.right = 0;
+    }}
 }
 
 var enginespref = document.querySelector('#se');
@@ -130,23 +142,6 @@ enginespref.onchange = (event) => {
     var index = enginespref.options.selectedIndex;
     localStorage.setItem('engine', index);
 };
-
-var sbsidepref = document.getElementById('pref-sbside')
-var sb = document.getElementById('sidebar')
-sbsidepref.onchange = (event) => {
-    var index = sbsidepref.options.selectedIndex;
-    console.log(index)
-    localStorage.setItem('sbside', index)
-    if (index == 0) {
-        sb.style.right = "unset";
-        sb.style.left = 0;
-    } 
-    if (index == 1) {
-        sb.style.left = "unset";
-        sb.style.right = 0;
-    }
-}
-sbsidepref.options.selectedIndex = localStorage.getItem('sbside') || 1
 
 enginespref.value = localStorage.getItem('engine') || '1';
 

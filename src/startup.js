@@ -20,6 +20,6 @@ native.getThemes();
 
 sbwv = document.getElementById('sidebarwv')
 sbwv.addEventListener('did-attach', () => {
-    sbwv.src = engineurls[preferences.searchengine];
+    sbwv.src = 'https://' + engineurls[preferences.searchengine].split("/")[2]
 })
 

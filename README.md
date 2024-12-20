@@ -24,7 +24,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/jdev082>
-            <img src=https://private-avatars.githubusercontent.com/u/92550746?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzM1NjAsIm5iZiI6MTczNDY3MjM2MCwicGF0aCI6Ii91LzkyNTUwNzQ2In0.Cc0uXzSDTsMSIpi9cpNLGIq9W2gz25tvR6ZWOwpf4ek&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jdev08/>
+            <img src=https://private-avatars.githubusercontent.com/u/92550746?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzQ0NjAsIm5iZiI6MTczNDY3MzI2MCwicGF0aCI6Ii91LzkyNTUwNzQ2In0.YLggoBrkwRENn5LwdOndpmKnz0eSfk9vTMeCxM8qWb8&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=jdev08/>
             <br />
             <sub style="font-size:14px"><b>jdev08</b></sub>
         </a>
@@ -45,7 +45,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/VelocityDesign>
-            <img src=https://private-avatars.githubusercontent.com/u/24457862?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzM1NjAsIm5iZiI6MTczNDY3MjM2MCwicGF0aCI6Ii91LzI0NDU3ODYyIn0.DIaeaCvQb7xXRPAqpXqt2W50shm0YkghWHZXiJMmg0Y&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Judah Brown/>
+            <img src=https://private-avatars.githubusercontent.com/u/24457862?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzQ0NjAsIm5iZiI6MTczNDY3MzI2MCwicGF0aCI6Ii91LzI0NDU3ODYyIn0.6ip4M4nBas0JptnfCNx3sWw95WFfJhRSunHvh7yIWLE&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Judah Brown/>
             <br />
             <sub style="font-size:14px"><b>Judah Brown</b></sub>
         </a>
@@ -59,7 +59,7 @@ Here are the Linux distributions that have Catalyst in their repositories: \
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hello-smile6>
-            <img src=https://private-avatars.githubusercontent.com/u/73048226?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzM1NjAsIm5iZiI6MTczNDY3MjM2MCwicGF0aCI6Ii91LzczMDQ4MjI2In0.3vd_Bp_K30iImswmR1WJkbnuzBTeI7l6H_6uma9VF6E&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hello-smile6/>
+            <img src=https://private-avatars.githubusercontent.com/u/73048226?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzQ0NjAsIm5iZiI6MTczNDY3MzI2MCwicGF0aCI6Ii91LzczMDQ4MjI2In0.3eoSu09TQX5rlvNTiY3KAxhimb3ao-1wrMK6sICzUPQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hello-smile6/>
             <br />
             <sub style="font-size:14px"><b>hello-smile6</b></sub>
         </a>
@@ -68,14 +68,14 @@ Here are the Linux distributions that have Catalyst in their repositories: \
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/cocoelacanth>
-            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzM2MjAsIm5iZiI6MTczNDY3MjQyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.t60simqe4FJz4S4zODuQhY7QFqv0NetBkqt7CHFTCAU&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
+            <img src=https://private-avatars.githubusercontent.com/u/44563370?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzQ1MjAsIm5iZiI6MTczNDY3MzMyMCwicGF0aCI6Ii91LzQ0NTYzMzcwIn0.ywbu97dgtXnheXJPIy6oUEiVH81kO3CoR28yF4f28XQ&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Coco/>
             <br />
             <sub style="font-size:14px"><b>Coco</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Drsheppard01>
-            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzM2ODAsIm5iZiI6MTczNDY3MjQ4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.3WRmPdxRHHYnWxK2LWdEsYbYfsOMj_vie2CEb9XlC0M&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
+            <img src=https://private-avatars.githubusercontent.com/u/60893791?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzQ1ODAsIm5iZiI6MTczNDY3MzM4MCwicGF0aCI6Ii91LzYwODkzNzkxIn0.dRjP4VDO3IN9tsZzvvbx-X7cW-Xf-SAuxg3get3b8Xk&v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DrSheppard/>
             <br />
             <sub style="font-size:14px"><b>DrSheppard</b></sub>
         </a>

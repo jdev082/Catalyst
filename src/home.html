@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link href="../node_modules/material-symbols/index.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <style>
@@ -69,13 +70,17 @@
     }
 
     #toggle {
-        margin: 4pt;
+        margin: 8pt;
         padding: 4pt;
-        border-radius: 9999px;
+        border-radius: 50%;
         color: white;
         position: fixed;
         left: 0;
         top: 0;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
     }
 
     #main, #clock, #shortcuts {
@@ -110,7 +115,7 @@
             </div>
         </div>
     </div>
-    <button id="toggle">Preferences</button>
+    <button id="toggle"><span class="material-symbols-rounded">settings</span></button>
 
     <script>
         const widgets = document.querySelector('.widgets')

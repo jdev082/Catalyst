@@ -23,7 +23,8 @@ if (localStorage.getItem('bookmarks') < 1) {
 
 native.getThemes();
 
+sbwv = document.getElementById('sidebarwv')
 sbwv.addEventListener('did-attach', () => {
-    sbwv.src = engineurls[engine];
+    sbwv.src = engineurls[preferences.searchengine];
 })
 

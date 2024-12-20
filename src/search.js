@@ -52,13 +52,9 @@ searchbar.addEventListener('input', async() => {
 function loadURL(url, scheck="true") {
     view = document.querySelector('.current');
     if (isSearch(url)) {
-        if (!preferences.searchengine) {
-            document.querySelector('.current').src  = `${engineurls[1]}${encodeURIComponent(url)}`;
-        } else {
             document.querySelector(
                 '.current'
             ).src = `${engineurls[preferences.searchengine]}${encodeURIComponent(url)}`;
-        }
     } else {
         if ( url.startsWith('http://') ) {
             alert(`Page ${url} is not secure.`);

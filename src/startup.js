@@ -23,8 +23,6 @@ if (localStorage.getItem('bookmarks') < 1) {
 
 native.getThemes();
 
-var engine = localStorage.getItem('engine')
-
 sbwv.addEventListener('did-attach', () => {
     sbwv.src = engineurls[engine];
 })

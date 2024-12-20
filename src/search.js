@@ -52,12 +52,12 @@ searchbar.addEventListener('input', async() => {
 function loadURL(url, scheck="true") {
     view = document.querySelector('.current');
     if (isSearch(url)) {
-        if (!localStorage.getItem('engine')) {
+        if (!preferences.searchengine) {
             document.querySelector('.current').src  = `${engineurls[1]}${encodeURIComponent(url)}`;
         } else {
             document.querySelector(
                 '.current'
-            ).src = `${engineurls[localStorage.getItem('engine')]}${encodeURIComponent(url)}`;
+            ).src = `${engineurls[preferences.searchengine]}${encodeURIComponent(url)}`;
         }
     } else {
         if ( url.startsWith('http://') ) {
@@ -113,7 +113,7 @@ function shouldAutocomplete(input) {
 }
 
 function engineSupportsAC(input) {
-    if (localStorage.getItem('engine') != 1) {
+    if (preferences.searchengine != 1) {
         return false;
     }
     return true;

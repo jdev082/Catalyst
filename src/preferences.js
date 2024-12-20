@@ -137,14 +137,6 @@ function evaluatePreferences() {
     }}
 }
 
-var enginespref = document.querySelector('#se');
-enginespref.onchange = (event) => {
-    var index = enginespref.options.selectedIndex;
-    localStorage.setItem('engine', index);
-};
-
-enginespref.value = localStorage.getItem('engine') || '1';
-
 function changePrefTab(itm) {
     document.querySelector(`#${itm}`).classList.remove('hidden');
     others = document.querySelector('#preferences-box').getElementsByTagName('*');

@@ -113,14 +113,8 @@
     <button id="toggle">Preferences</button>
 
     <script>
-        const preferences = JSON.parse(localStorage.getItem('preferences'))
         const widgets = document.querySelector('.widgets')
         const toggle = document.getElementById('toggle')
-
-        if (preferences.homewidgets) {
-            widgets.classList.toggle("hidden")
-            toggle.classList.toggle("hidden")
-        }
 
         const main = document.getElementById('main')
         const clock = document.getElementById('clock')
@@ -129,10 +123,6 @@
         const wmain = document.getElementById('widget-main')
         const wclock = document.getElementById('widget-clock')
         const wshort = document.getElementById('widget-shortcuts')
-
-
-        widgets.classList.toggle("hidden")
-        toggle.classList.toggle("hidden")
 
         toggle.addEventListener("click", () => {
             document.getElementById('preferences').classList.toggle('hidden')
@@ -145,6 +135,7 @@
 
         if (localStorage.getItem('clock') == 'true') {
             clock.style.display = 'grid'
+            setInterval(updateTime, 1000);
             wclock.checked = true;
         }
 
@@ -167,10 +158,6 @@
 
         function updateTime() {
             document.getElementById('time').innerText = new Date();
-        }
-
-        if (preferences.homewidgets) { 
-            setInterval(updateTime, 1000);
         }
     </script>
 

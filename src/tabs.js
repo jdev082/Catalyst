@@ -2,7 +2,7 @@
 let activeHash = '0';
 let hasFavicon = {};
 // Functions
-var ctlyststrppg = localStorage.getItem('ctlyststrppg') || './home.html';
+var ctlyststrppg = preferences.startpage;
 
 /**
  * Creates a new tab
@@ -55,6 +55,7 @@ async function createTab(url) {
     document.getElementById('webviews').appendChild(view);
     switchTabs(randomHash);
     document.getElementById('searchbar').focus();
+    native.setTitlebarTitle(view.title);
 }
 createTab();
 
@@ -86,6 +87,7 @@ function switchTabs(tabHash) {
         document.getElementById('searchbar').value = view.src;
     }
     activeHash = tabHash;
+    native.setTitlebarTitle(view.title);
 }
 
 function addListeners(view, hash) {
@@ -116,6 +118,7 @@ function addListeners(view, hash) {
     });
     view.addEventListener('page-title-updated', (e) => {
         tab.getElementsByTagName('span')[0].innerText = e.title;
+        native.setTitlebarTitle(e.title);
         let viewURL = view.getURL();
         if (!viewURL.startsWith('file://')) {
             document.getElementById('searchbar').value = viewURL;

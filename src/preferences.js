@@ -31,11 +31,12 @@ function togglePreferences() {
         }
         addTextListener(document.getElementById('pref-useragent'), 'agent');
         addTextListener(document.getElementById('pref-font'), 'font');
-        addCheckboxListener(document.getElementById('pref-homewidgets'), 'homewidgets');
-        document.getElementById('pref-homewidgets').checked = preferences.homewidgets;
+        addTextListener(document.getElementById('pref-strt'), 'startpage');
         addSelectListener(document.getElementById('pref-theme'), 'theme');
-        addCheckboxListener(document.getElementById("pref-esb"), 'esb')
+        addCheckboxListener(document.getElementById('pref-esb'), 'esb');
         document.getElementById('pref-esb').checked = preferences.esb;
+        addSelectListener(document.getElementById('se'), 'searchengine');
+        addSelectListener(document.getElementById('pref-sbside'), 'sidebarside');
     }
 }
 
@@ -52,7 +53,7 @@ function getPreferences() {
     if (!window.localStorage.getItem('preferences')) {
         window.localStorage.setItem(
             'preferences',
-            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, esb: false })
+            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, esb: false, startpage: './home.html', sidebarside: '1', searchengine: 1 })
         );
     }
     return JSON.parse(window.localStorage.getItem('preferences'));
@@ -116,7 +117,6 @@ function evaluatePreferences() {
             native.unloadTheme();
         }
         if (preferences.theme == 0) {
-            return;
         }
         native.loadTheme(preferences.theme);
     }
@@ -124,17 +124,19 @@ function evaluatePreferences() {
         document.body.style.fontFamily = preferences.font;
     }
     if (preferences.esb) {
-        document.getElementById('tgl-sidebar').classList.remove("hidden")
+        document.getElementById('tgl-sidebar').classList.remove('hidden');
     }
+    if (preferences.sidebarside) {
+        var sb = document.getElementById('sidebar');
+        if (preferences.sidebarside === '0') {
+            sb.style.right = 'unset';
+            sb.style.left = 0;
+        } 
+        if (preferences.sidebarside === '1' ){
+            sb.style.left = 'unset';
+            sb.style.right = 0;
+        }}
 }
-
-var enginespref = document.querySelector('#se');
-enginespref.onchange = (event) => {
-    var index = enginespref.options.selectedIndex;
-    localStorage.setItem('engine', index);
-};
-
-enginespref.value = localStorage.getItem('engine') || '1';
 
 function changePrefTab(itm) {
     document.querySelector(`#${itm}`).classList.remove('hidden');

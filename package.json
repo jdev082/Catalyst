@@ -1,6 +1,6 @@
 {
     "name": "catalyst",
-    "version": "3.9.5",
+    "version": "3.9.6-beta.4",
     "description": "A minimal Electron Web Browser",
     "main": "main/main.js",
     "private": true,
@@ -29,6 +29,7 @@
     },
     "dependencies": {
         "@cliqz/adblocker-electron": "^1.27.3",
+        "bookmarks-parser": "^1.5.0",
         "cross-fetch": "^4.0.0",
         "electron-context-menu": "^3.6.1",
         "electron-squirrel-startup": "^1.0.1",

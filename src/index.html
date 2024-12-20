@@ -3,10 +3,9 @@
 
 <head>
     <title>Catalyst</title>
-    <script src="./extend.js"></script>
-    <script src="./tabs.js" defer></script>
-    <script src="./search.js" defer></script>
     <script src="./preferences.js" defer></script>
+    <script src="./search.js" defer></script>
+    <script src="./tabs.js" defer></script>
     <link href="../node_modules/material-symbols/index.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +89,7 @@
                 <label for="pref-autocomplete">Autocomplete </label>
                 <input id="pref-autocomplete" type="checkbox" />
             </div>
-            <p class="text-sm">Search Autocomplete</p>
+            <p>Search Autocomplete</p>
             <br />
             <label for="se">Search Engine</label>
             <select name="se" id="se">
@@ -104,14 +103,13 @@
         <div class="hidden" id="advanced">
             <label for="pref-strt">Startup Page</label>
             <input type="text" id="pref-strt" />
-            <p class="text-sm">Sets a custom startup page.</p>
+            <p>Sets a custom startup page.</p>
             <br />
             <div class="toggle-area">
                 <label for="pref-usrchr">Custom CSS</label>
                 <input id="pref-usrchr" type="checkbox" />
             </div>
-            <br />
-            <p class="text-sm">Loads custom css from the userChrome.css file</p>
+            <p>Loads custom css from the userChrome.css file</p>
             <br />
             <label for="pref-font">Custom Font</label>
             <input type="text" id="pref-font">
@@ -121,39 +119,41 @@
                 <label for="pref-adblk">Enable AD Blocker</label>
                 <input id="pref-adblk" type="checkbox" />
             </div>
-            <p class="text-sm">Enables the ad blocker (RESTART REQUIRED)</p>
+            <p>Enables the ad blocker (RESTART REQUIRED)</p>
         </div>
         <div class="hidden" id="experiments">
             <div class="toggle-area">
                 <label for="pref-dm"><b>Experimental</b> Force Dark Mode</label>
                 <input id="pref-dm" type="checkbox" />
             </div>
-            <p class="text-sm">Toggles forced dark mode for all sites.</p>
+            <p>Toggles forced dark mode for all sites.</p>
             <br />
             <label for="pref-useragent"><b>Experimental</b> User Agent: </label>
             <input id="pref-useragent" type="text"
                 placeholder="Catalyst/{{version}}" value="Catalyst/{{version}}" />
-            <p class="text-sm">Sets a custom user agent.</p>
+            <p>Sets a custom user agent.</p>
             <br />
-            <div class="toggle-area">
-                <label for="pref-homewidgets"><b>Experimental</b> Home Widgets</label>
-                <input id="pref-homewidgets" type="checkbox">
-            </div>
-            <p>Enables widgets on the default home page.</p>
-            <br />
+
             <label for="pref-esb"><b>Experimental</b> Enable Sidebar</label>
             <input id="pref-esb" type="checkbox">
             <br />
             <p>Enable the sidebar.</p>
+            <br />
+            <label for="pref-sbside"><b>Experimental</b> Sidebar Side</label>
+            <select name="sbside" id="pref-sbside">
+                <option value="0">Left</option>
+                <option value="1">Right</option>
+            </select>
+            <p>Sets which side the sidebar is on</p>
         </div>
         <br />
         <div style="margin-left: 16pt;">
         <button id="clearbtn" onclick="clearData()">Reset Preferences</button>
         <br />
         <br />
-        <i class="text-sm" id="pref-ver"></i>
+        <iid="pref-ver"></i>
         <br />
-        <i class="text-sm" id="distrib_id">catalyst-default-distrib</i>
+        <iid="distrib_id">catalyst-default-distrib</i>
         </div>
     </div>
     </div>
@@ -168,13 +168,18 @@
         <button onClick="togglePreferences()">Customize Catalyst</button>
     </div>
     <!-- Sidebar -->
-    <webview class="hidden" id="sidebar" src="https://www.google.com"></webview>
+    <div class="hidden" id="sidebar">
+        <div style="display: flex;">
+            <button onClick="sbwv.src = 'https://wikipedia.org'"><span class="material-symbols-rounded">book</span>Wikipedia</button>
+        </div>
+        <webview id="sidebarwv" src="https://example.org"></webview>
+    </div>
     <!-- Webviews generated with JS -->
     <div id="webviews"></div>
     <!-- Find Window -->
     <input class="hidden" id="find" placeholder="Search..." />
     <script src="./functions.js"></script>
-    <script src="./startup.js" defer></script>
+    <script src="./startup.js"></script>
     <script src="./bookmarks.js"></script>
     <script src="./listeners.js"></script>
 </body>

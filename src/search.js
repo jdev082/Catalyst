@@ -49,16 +49,12 @@ searchbar.addEventListener('input', async() => {
     }
 });
 
-function loadURL(url, scheck="true") {
+function loadURL(url, scheck='true') {
     view = document.querySelector('.current');
     if (isSearch(url)) {
-        if (!localStorage.getItem('engine')) {
-            document.querySelector('.current').src  = `${engineurls[1]}${encodeURIComponent(url)}`;
-        } else {
-            document.querySelector(
-                '.current'
-            ).src = `${engineurls[localStorage.getItem('engine')]}${encodeURIComponent(url)}`;
-        }
+        document.querySelector(
+            '.current'
+        ).src = `${engineurls[preferences.searchengine]}${encodeURIComponent(url)}`;
     } else {
         if ( url.startsWith('http://') ) {
             alert(`Page ${url} is not secure.`);
@@ -71,11 +67,12 @@ function loadURL(url, scheck="true") {
                 }
             }
         }
-        if (url.startsWith("catalyst://")) {
-            keyword = url.split("catalyst://")[1]
-            if (keyword == "home") {
-                loadURL(ctlyststrppg)
-            } else if (keyword == "preferences") {
+        if (url.startsWith('catalyst://')) {
+            keyword = url.split('catalyst://')[1];
+            if (keyword == 'home') {
+                // loadURL(ctlyststrppg)
+                alert('not supported.');
+            } else if (keyword == 'preferences') {
                 togglePreferences();
             }
             return;
@@ -112,7 +109,7 @@ function shouldAutocomplete(input) {
 }
 
 function engineSupportsAC(input) {
-    if (localStorage.getItem('engine') != 1) {
+    if (preferences.searchengine != 1) {
         return false;
     }
     return true;

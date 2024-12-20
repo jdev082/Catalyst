@@ -77,6 +77,10 @@
         left: 0;
         top: 0;
     }
+
+    #main, #clock, #shortcuts {
+        display: none;
+    }
 </style>
 
 <body>
@@ -134,21 +138,18 @@
             document.getElementById('preferences').classList.toggle('hidden')
         })
 
-        if (!localStorage.getItem('main')) {
-            main.classList.toggle('hidden')
-        } else {
+        if (localStorage.getItem('main') == 'true') {
+            main.style.display = 'grid'
             wmain.checked = true;
         }
 
-        if (!localStorage.getItem('clock')) {
-            main.classList.toggle('hidden')
-        } else {
+        if (localStorage.getItem('clock') == 'true') {
+            clock.style.display = 'grid'
             wclock.checked = true;
         }
 
-        if (!localStorage.getItem("shortcuts")) {
-            main.classList.toggle('hidden')
-        } else {
+        if (localStorage.getItem('shortcuts') == 'true') {
+            shortcuts.style.display = 'grid'
             wshort.checked = true;
         }
 

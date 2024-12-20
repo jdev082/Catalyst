@@ -31,6 +31,7 @@ function togglePreferences() {
         }
         addTextListener(document.getElementById('pref-useragent'), 'agent');
         addTextListener(document.getElementById('pref-font'), 'font');
+        addTextListener(document.getElementById('pref-strt'), 'startpage')
         addSelectListener(document.getElementById('pref-theme'), 'theme');
         addCheckboxListener(document.getElementById("pref-esb"), 'esb')
         document.getElementById('pref-esb').checked = preferences.esb;

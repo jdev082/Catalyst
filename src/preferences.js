@@ -53,7 +53,7 @@ function getPreferences() {
     if (!window.localStorage.getItem('preferences')) {
         window.localStorage.setItem(
             'preferences',
-            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, esb: false })
+            JSON.stringify({ dark: false, agent: '', autocomplete: true, bookmarks: false, esb: false, startpage: './home.html', sidebarside: '1' })
         );
     }
     return JSON.parse(window.localStorage.getItem('preferences'));

@@ -2,7 +2,7 @@
 let activeHash = '0';
 let hasFavicon = {};
 // Functions
-var ctlyststrppg = preferences.startpage
+var ctlyststrppg = preferences.startpage;
 
 /**
  * Creates a new tab
@@ -55,7 +55,7 @@ async function createTab(url) {
     document.getElementById('webviews').appendChild(view);
     switchTabs(randomHash);
     document.getElementById('searchbar').focus();
-    native.setTitlebarTitle(view.title)
+    native.setTitlebarTitle(view.title);
 }
 createTab();
 

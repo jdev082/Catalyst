@@ -55,7 +55,7 @@ function progBookmarkTab(u, t) {
     const toPush = {
         title: t,
         url: u,
-    }
+    };
     bookmarks.push(toPush);
     storeBookmarks();
 }

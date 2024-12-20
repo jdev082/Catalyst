@@ -31,12 +31,12 @@ function togglePreferences() {
         }
         addTextListener(document.getElementById('pref-useragent'), 'agent');
         addTextListener(document.getElementById('pref-font'), 'font');
-        addTextListener(document.getElementById('pref-strt'), 'startpage')
+        addTextListener(document.getElementById('pref-strt'), 'startpage');
         addSelectListener(document.getElementById('pref-theme'), 'theme');
-        addCheckboxListener(document.getElementById("pref-esb"), 'esb')
+        addCheckboxListener(document.getElementById('pref-esb'), 'esb');
         document.getElementById('pref-esb').checked = preferences.esb;
-        addSelectListener(document.getElementById('se'), 'searchengine')
-        addSelectListener(document.getElementById('pref-sbside'), 'sidebarside')
+        addSelectListener(document.getElementById('se'), 'searchengine');
+        addSelectListener(document.getElementById('pref-sbside'), 'sidebarside');
     }
 }
 
@@ -124,18 +124,18 @@ function evaluatePreferences() {
         document.body.style.fontFamily = preferences.font;
     }
     if (preferences.esb) {
-        document.getElementById('tgl-sidebar').classList.remove("hidden")
+        document.getElementById('tgl-sidebar').classList.remove('hidden');
     }
     if (preferences.sidebarside) {
-    var sb = document.getElementById('sidebar')
-    if (preferences.sidebarside === '0') {
-        sb.style.right = "unset";
-        sb.style.left = 0;
-    } 
-    if (preferences.sidebarside === '1' ){
-        sb.style.left = "unset";
-        sb.style.right = 0;
-    }}
+        var sb = document.getElementById('sidebar');
+        if (preferences.sidebarside === '0') {
+            sb.style.right = 'unset';
+            sb.style.left = 0;
+        } 
+        if (preferences.sidebarside === '1' ){
+            sb.style.left = 'unset';
+            sb.style.right = 0;
+        }}
 }
 
 function changePrefTab(itm) {

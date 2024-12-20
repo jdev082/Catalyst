@@ -49,12 +49,12 @@ searchbar.addEventListener('input', async() => {
     }
 });
 
-function loadURL(url, scheck="true") {
+function loadURL(url, scheck='true') {
     view = document.querySelector('.current');
     if (isSearch(url)) {
-            document.querySelector(
-                '.current'
-            ).src = `${engineurls[preferences.searchengine]}${encodeURIComponent(url)}`;
+        document.querySelector(
+            '.current'
+        ).src = `${engineurls[preferences.searchengine]}${encodeURIComponent(url)}`;
     } else {
         if ( url.startsWith('http://') ) {
             alert(`Page ${url} is not secure.`);
@@ -67,12 +67,12 @@ function loadURL(url, scheck="true") {
                 }
             }
         }
-        if (url.startsWith("catalyst://")) {
-            keyword = url.split("catalyst://")[1]
-            if (keyword == "home") {
+        if (url.startsWith('catalyst://')) {
+            keyword = url.split('catalyst://')[1];
+            if (keyword == 'home') {
                 // loadURL(ctlyststrppg)
-                alert('not supported.')
-            } else if (keyword == "preferences") {
+                alert('not supported.');
+            } else if (keyword == 'preferences') {
                 togglePreferences();
             }
             return;

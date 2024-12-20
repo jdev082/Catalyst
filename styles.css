@@ -434,16 +434,33 @@ select:hover {
     border-bottom-right-radius: 0.125rem;
     border-bottom-left-radius: 0.125rem;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
+    position: fixed; 
+    top: 0;
     background-color: var(--primary);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 #welcomepage * {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 2pt;
-    margin-right: 2pt;
+    margin-left: 4pt;
+    margin-right: 4pt;
+    margin-top: 8pt;
+    margin-right: 8pt;
+}
+
+#welcomepage #wc-btns {
+    margin: 8pt;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#welcomepage p, li, button {
+    font-size: 16pt;
+}
+
+#welcomepage h1 {
+    font-size: 24pt;
 }
 
 input[type="checkbox"] {

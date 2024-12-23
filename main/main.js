@@ -167,7 +167,8 @@ const template = [{
                         { 
                             url = marks[i]['url']; 
                             title = marks[i]['title'];
-                            js = `progBookmarkTab("${url}", "${title}")`;
+                            icon = marks[i]['icon']
+                            js = `progBookmarkTab("${url}", "${title}", "${icon}")`;
                             console.log(url);
                             mainWindow.webContents.executeJavaScript(js);
                         }

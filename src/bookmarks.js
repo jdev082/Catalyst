@@ -14,10 +14,9 @@ updateBookmarksVar();
  * @param {string} url The URL to add a bookmark for.
  * @param {string} title The title of the page.
  */
-function addBookmarkToBar(url, title) {
+function addBookmarkToBar(url, title, icon) {
     let bookmarkEl = document.createElement('div');
-    img = `https://s2.googleusercontent.com/s2/favicons?sz=64&domain_url=${url}`;
-    bookmarkEl.innerHTML = `<img src='${img}'<h1>${title}</h1>`;
+    bookmarkEl.innerHTML = `<img src='${icon}'<h1>${title}</h1>`;
     bookmarkEl.onclick = () => {
         createTab(url);
     };
@@ -33,6 +32,7 @@ function bookmarkCurrentTab() {
     const toPush = {
         title: document.querySelector('.current').getTitle(),
         url: document.querySelector('.current').getURL(),
+        icon: document.querySelector('.active-tab').getElementsByTagName('img')[0].src
     };
     if (bookmarks.some((key) => key.url === toPush.url)) {
         if (confirm('Would you like to un-bookmark this page?')) {
@@ -50,11 +50,12 @@ function bookmarkCurrentTab() {
     storeBookmarks();
 }
 
-function progBookmarkTab(u, t) {
+function progBookmarkTab(u, t, i) {
     updateBookmarksVar();
     const toPush = {
         title: t,
         url: u,
+        icon: i
     };
     bookmarks.push(toPush);
     storeBookmarks();
@@ -69,7 +70,7 @@ function updateBookmarksVar() {
     if (bookmarks.length === 0) bookmarksBar.classList.add('hidden');
     for (let bookmarkIdx in bookmarks) {
         const bookmark = bookmarks[bookmarkIdx];
-        addBookmarkToBar(bookmark.url, bookmark.title);
+        addBookmarkToBar(bookmark.url, bookmark.title, bookmark.icon);
     }
 }
 

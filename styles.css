@@ -193,6 +193,11 @@ button img {
     cursor: pointer;
 }
 
+.bookmark h1 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
 .bookmark:hover {
     background-color: var(--secondary);
 }

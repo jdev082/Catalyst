@@ -12,8 +12,12 @@ const generateHashkey = () => {
 };
 
 const removeChildren = (parent) => {
-    while (parent.lastChild) {
-        parent.removeChild(parent.lastChild);
+    try {
+        while (parent.lastChild) {
+            parent.removeChild(parent.lastChild);
+        }
+    } catch (e) {
+        return e;
     }
 };
 
@@ -95,4 +99,14 @@ function toggleFullScreen() {
 
 function openInSidebar(u) {
     document.getElementById('sidebar').src = u;
+}
+
+function handlPermReq(url, permission) {
+    urlbase = url.split("/")[2]
+    if (localStorage.getItem(`${urlbase}-${permission}`) == 'true') {
+        return true;
+    } else if (confirm("Page ${url} would like to access permission ${permission}")) {
+        localStorage.setItem(`${urlbase}-${permission}`, "true")
+        return true;
+    } 
 }

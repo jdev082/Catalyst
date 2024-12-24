@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('pref-ver').innerText = 'v' + dat.version;
 });
 
+ipcRenderer.send('localstorage', JSON.stringify(window.localStorage))
+
 contextBridge.exposeInMainWorld('native', {
     loadExt: (ext) => {
         ipcRenderer.invoke('loadExt', ext);

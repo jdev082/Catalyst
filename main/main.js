@@ -274,13 +274,19 @@ ipcMain.handle('set-titlebar-title', async (event, title) => {
     mainWindow.title = 'Catalyst - ' + title;
 }); 
 
+let prefs;
+
+ipcMain.on('localstorage', (event, data) => {
+    prefs = data;
+})
+
 ipcMain.handle('set-permission-handler', async (event, id) => {
     ses = session.fromPartition(id)
     ses.setPermissionRequestHandler((webContents, permission, callback) => {
         let url = webContents.getURL();
-        webContents.executeJavaScript(`
+        mainWindow.webContents.executeJavaScript(`
             new Promise((resolve) => {
-                const result = confirm("Page ${url} would like to acecss permission ${permission}");
+                const result = handlPermReq("${url}", "${permission}")
                 resolve(result);
             })
         `).then(result => {

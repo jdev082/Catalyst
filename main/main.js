@@ -271,7 +271,7 @@ ipcMain.handle('toggle-full-screen', async (event) => {
 });
 
 ipcMain.handle('set-titlebar-title', async (event, title) => {
-    mainWindow.title = 'Catalyst - ' + title;
+    mainWindow.title = 'Catalyst (Merry Christmas!) - ' + title;
 }); 
 
 let prefs;

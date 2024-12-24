@@ -44,6 +44,9 @@ async function createTab(url) {
     }
     view.src = url;
     view.partition = randomHash;
+    if (preferences.adblk) {
+        native.enableAdBlocker(randomHash);
+    }
     let image = document.createElement('img');
     image.width = '16';
     image.height = '16';

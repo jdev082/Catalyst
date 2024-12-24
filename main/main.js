@@ -219,9 +219,10 @@ app.on('web-contents-created', (e, contents) => {
     
 });
 
-ipcMain.handle('enable-ad-blocker', (event) => {
+ipcMain.handle('enable-ad-blocker', (event, id) => {
+    ses = session.fromPartition(id);
     ElectronBlocker.fromPrebuiltAdsAndTracking(fetch).then((blocker) => {
-        blocker.enableBlockingInSession(session.defaultSession);
+        blocker.enableBlockingInSession(ses);
     });
 });
 

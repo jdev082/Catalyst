@@ -109,9 +109,6 @@ function evaluatePreferences() {
     if (preferences.usrchr) {
         native.loadCustomStyles();
     }
-    if (preferences.adblk) {
-        native.enableAdBlocker();
-    }
     if (preferences.theme) {
         if (document.getElementsByClassName('theme').length > 0) {
             native.unloadTheme();

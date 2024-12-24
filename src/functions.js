@@ -105,7 +105,7 @@ function handlPermReq(url, permission) {
     urlbase = url.split("/")[2]
     if (localStorage.getItem(`${urlbase}-${permission}`) == 'true') {
         return true;
-    } else if (confirm("Page ${url} would like to access permission ${permission}")) {
+    } else if (confirm(`Page ${url} would like to access permission ${permission}`)) {
         localStorage.setItem(`${urlbase}-${permission}`, "true")
         return true;
     } 

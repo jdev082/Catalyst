@@ -43,6 +43,7 @@ async function createTab(url) {
         view.useragent = inputAgent.replace('{{version}}', packageJSON.version);
     }
     view.src = url;
+    view.partition = randomHash;
     let image = document.createElement('img');
     image.width = '16';
     image.height = '16';
@@ -53,6 +54,7 @@ async function createTab(url) {
     tab.appendChild(mute);
     addListeners(view, randomHash);
     document.getElementById('webviews').appendChild(view);
+    native.setPermissionHandler(randomHash)
     switchTabs(randomHash);
     document.getElementById('searchbar').focus();
     native.setTitlebarTitle(view.title);

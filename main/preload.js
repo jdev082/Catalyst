@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('pref-ver').innerText = 'v' + dat.version;
 });
 
+ipcRenderer.send('send-localstorage', localStorage)
+
 contextBridge.exposeInMainWorld('native', {
     loadExt: (ext) => {
         ipcRenderer.invoke('loadExt', ext);
@@ -59,5 +61,8 @@ contextBridge.exposeInMainWorld('native', {
     ipcToggleFs: () => ipcRenderer.invoke('toggle-full-screen'),
     setTitlebarTitle: (title) => {
         ipcRenderer.invoke('set-titlebar-title', title);
+    },
+    setPermissionHandler: (id) => {
+        ipcRenderer.invoke('set-permission-handler', id)
     }
 });

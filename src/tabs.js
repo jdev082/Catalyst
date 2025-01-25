@@ -144,6 +144,9 @@ function addListeners(view, hash) {
             tab.getElementsByTagName('img')[0].style.display = 'none';
         }
     });
+    view.addEventListener('did-fail-load', (e) => {
+        view.src = './fail.html'
+    });
 }
 
 function removeTab() {

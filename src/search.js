@@ -78,11 +78,6 @@ function loadURL(url, scheck='true') {
             return;
         }
         view.src = url;
-        view.addEventListener('did-fail-load', () => {
-            view.src = 'home.html';
-            alert(`Failed to load page ${url}`);
-            return;
-        });
     }
     removeChildren(suggestionsEl);
     view.addEventListener('did-finish-load', () => {

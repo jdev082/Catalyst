@@ -1,7 +1,7 @@
 {
     "name": "catalyst",
     "version": "3.9.6",
-    "description": "A minimal Electron Web Browser",
+    "description": "A minimal, functional, and customizable user-focused FOSS web browser.",
     "main": "main/main.js",
     "private": true,
     "scripts": {

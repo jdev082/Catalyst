@@ -21,7 +21,7 @@
     "email": "email@localhost",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^33.3.2",
+        "electron": "^34.1.1",
         "electron-builder": "^25.1.8",
         "electron-builder-squirrel-windows": "^25.1.8",
         "electron-reloader": "^1.2.3",
